@@ -1,6 +1,29 @@
 {
-  "name": "Tundra",
-  "movement_cost": 2,
+  "name": "tundra",
+  "display_name": "Tundra",
+  "movement_cost": 1,
   "defense_bonus": 0,
-  "color": "lightblue"
+  "food_yield": 1,
+  "production_yield": 0,
+  "gold_yield": 0,
+  "base_image": "assets/tiles/tundra/base.png",
+  "variants": {
+    "isolated": "assets/tiles/tundra/isolated.png",
+    "fully_surrounded": "assets/tiles/tundra/surrounded.png",
+    "vertical_edge_right": "assets/tiles/tundra/edge_right.png",
+    "vertical_edge_left": "assets/tiles/tundra/edge_left.png",
+    "horizontal_edge_top": "assets/tiles/tundra/edge_top.png",
+    "horizontal_edge_bottom": "assets/tiles/tundra/edge_bottom.png",
+    "inner_corner_top_right": "assets/tiles/tundra/inner_corner_tr.png",
+    "inner_corner_top_left": "assets/tiles/tundra/inner_corner_tl.png",
+    "inner_corner_bottom_right": "assets/tiles/tundra/inner_corner_br.png",
+    "inner_corner_bottom_left": "assets/tiles/tundra/inner_corner_bl.png",
+    "outer_corner_top_right": "assets/tiles/tundra/outer_corner_tr.png",
+    "outer_corner_top_left": "assets/tiles/tundra/outer_corner_tl.png",
+    "outer_corner_bottom_right": "assets/tiles/tundra/outer_corner_br.png",
+    "outer_corner_bottom_left": "assets/tiles/tundra/outer_corner_bl.png"
+  },
+  "passable": true,
+  "can_found_city": true,
+  "description": "Cold, nearly barren plains with minimal vegetation but potential for some resources."
 }

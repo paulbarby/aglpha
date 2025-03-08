@@ -76,18 +76,3 @@ class Logger:
         """Log an exception with context."""
         message = f"Exception in {context}: {str(e)}"
         self.error(message, exc_info=True)
-
-
-def try_except(func):
-    """
-    Decorator for handling exceptions in methods.
-    Logs exceptions and allows program to continue.
-    """
-    def wrapper(*args, **kwargs):
-        try:
-            return func(*args, **kwargs)
-        except Exception as e:
-            logger = Logger()
-            logger.log_exception(e, func.__name__)
-            return None
-    return wrapper

@@ -1,6 +1,30 @@
 {
-  "name": "Swamp",
+  "name": "swamp",
+  "display_name": "Swamp",
   "movement_cost": 3,
-  "defense_bonus": 0,
-  "color": "olive"
+  "defense_bonus": 10,
+  "food_yield": 1,
+  "production_yield": 0,
+  "gold_yield": 0,
+  "base_image": "assets/tiles/swamp/base.png",
+  "variants": {
+    "isolated": "assets/tiles/swamp/isolated.png",
+    "fully_surrounded": "assets/tiles/swamp/surrounded.png",
+    "vertical_edge_right": "assets/tiles/swamp/edge_right.png",
+    "vertical_edge_left": "assets/tiles/swamp/edge_left.png",
+    "horizontal_edge_top": "assets/tiles/swamp/edge_top.png",
+    "horizontal_edge_bottom": "assets/tiles/swamp/edge_bottom.png",
+    "inner_corner_top_right": "assets/tiles/swamp/inner_corner_tr.png",
+    "inner_corner_top_left": "assets/tiles/swamp/inner_corner_tl.png",
+    "inner_corner_bottom_right": "assets/tiles/swamp/inner_corner_br.png",
+    "inner_corner_bottom_left": "assets/tiles/swamp/inner_corner_bl.png",
+    "outer_corner_top_right": "assets/tiles/swamp/outer_corner_tr.png",
+    "outer_corner_top_left": "assets/tiles/swamp/outer_corner_tl.png",
+    "outer_corner_bottom_right": "assets/tiles/swamp/outer_corner_br.png",
+    "outer_corner_bottom_left": "assets/tiles/swamp/outer_corner_bl.png"
+  },
+  "passable": true,
+  "can_found_city": false,
+  "can_be_drained": true,
+  "description": "Waterlogged, marshy areas that significantly slow movement but may contain unique resources."
 }

@@ -27,8 +27,13 @@ This document summarizes the core classes and managers designed for the Civiliza
   - **Values:** `IDLE`, `EXPANDING`, `ATTACKING`, `DEFENSIVE`, `DIPLOMATIC`.
 
 - **AnimationState**
+
   - **Purpose:** Represents the current animation phase for game objects.
   - **Values:** `IDLE`, `WALKING`, `ATTACKING`, `DYING`, `SPAWNING`.
+
+- **GameAudioState**
+  - **Purpose:** Defines different audio contexts throughout the game.
+  - **Values:** `MAIN_MENU`, `GAMEPLAY`, `COMBAT`, `VICTORY`, `DEFEAT`, `OPTIONS_MENU`.
 
 ---
 
@@ -45,10 +50,12 @@ This document summarizes the core classes and managers designed for the Civiliza
   - `turn`: Current turn counter.
   - `players`: List of players (human and AI).
   - `map`: Instance of the **Map** class representing the game world.
-  - Managers for units, cities, AI, events, UI, and animations.
+  - Managers for units, cities, AI, events, UI, animations, and sound.
 
-- **Key Method:**
+- **Key Methods:**
   - `update()`: Calls updates on all managers to progress game logic.
+  - `handle_event(event)`: Processes both pygame events and game-specific events.
+  - `_load_default_audio()`: Initializes the audio system with sounds and music.
 
 ---
 
@@ -199,4 +206,95 @@ This document summarizes the core classes and managers designed for the Civiliza
 
 ---
 
-This structured specification provides a modular and extensible foundation for the game engine, ensuring that core systems such as state management, AI, events, animations, and UI are clearly defined and easily maintainable.
+### Audio Components
+
+#### SoundManager
+
+- **Responsibilities:**  
+  Handles loading, playback, and volume control of all game audio.
+
+- **Key Properties:**
+
+  - `sound_effects`: Dictionary of loaded sound effect objects.
+  - `music_tracks`: Dictionary of music track file paths.
+  - `playlists`: Dictionary of playlist configurations.
+  - `sound_volume`, `music_volume`, `master_volume`: Volume levels.
+  - `sound_enabled`, `music_enabled`: Toggle flags for audio categories.
+
+- **Key Methods:**
+  - `load_sound(name, file_path)`: Registers a sound effect.
+  - `load_music(name, file_path)`: Registers a music track.
+  - `play_sound(name)`: Plays a sound effect.
+  - `play_music(name, fadeout, loops)`: Plays a music track.
+  - `play_playlist(playlist_name)`: Plays tracks from a configured playlist.
+  - `set_master_volume(volume)`: Controls overall volume.
+
+#### AudioStateManager
+
+- **Responsibilities:**  
+  Manages audio transitions between different game states.
+
+- **Key Properties:**
+
+  - `current_state`: Current GameAudioState value.
+  - `state_music_map`: Maps game states to music tracks.
+  - `state_transition_sounds`: Maps state changes to sound effects.
+
+- **Key Methods:**
+  - `change_state(new_state)`: Updates audio state and plays appropriate music/sounds.
+  - `play_event_sound(sound_name)`: Plays a specific sound regardless of state.
+
+#### SoundAssetsIndex
+
+- **Responsibilities:**  
+  Indexes and provides access to all audio files in the game directory.
+
+- **Key Properties:**
+
+  - `music_files`: Dictionary mapping IDs to music file paths.
+  - `sound_files`: Dictionary mapping IDs to sound effect file paths.
+  - `playlists`: Dictionary of configured playlist data.
+
+- **Key Methods:**
+  - `get_sound_path(sound_id)`: Retrieves path for a specific sound effect.
+  - `get_music_path(music_id)`: Retrieves path for a specific music track.
+  - `get_all_sound_paths()`: Returns all indexed sound effect paths.
+  - `get_all_music_paths()`: Returns all indexed music track paths.
+
+---
+
+### UI Components
+
+#### UIManager
+
+- **Responsibilities:**  
+  Manages all user interface elements and their interactions.
+
+- **Key Properties:**
+
+  - `ui_elements`: Dictionary of UI elements.
+  - `active_screen`: Currently active UI screen.
+
+- **Key Methods:**
+  - `is_options_button_clicked(pos)`: Checks if the options button was clicked.
+  - `update_ui()`: Updates UI elements based on game state.
+  - `render(screen)`: Draws all visible UI elements.
+
+#### OptionsMenuScreen
+
+- **Responsibilities:**  
+  Provides interface for adjusting game settings, particularly audio.
+
+- **Key Properties:**
+
+  - `sound_manager`: Reference to the game's SoundManager.
+  - Various UI elements: sliders, buttons, etc.
+
+- **Key Methods:**
+  - `handle_event(event)`: Processes UI interactions.
+  - `toggle_music()`, `toggle_sound()`: Toggle audio categories.
+  - `on_master_volume_change()`, `on_music_volume_change()`, `on_sound_volume_change()`: Handle slider adjustments.
+
+---
+
+This structured specification provides a modular and extensible foundation for the game engine, ensuring that core systems such as state management, AI, events, animations, audio, and UI are clearly defined and easily maintainable.

@@ -1,6 +1,29 @@
 {
-  "name": "Mountains",
+  "name": "mountain",
+  "display_name": "Mountains",
   "movement_cost": 3,
-  "defense_bonus": 2,
-  "color": "gray"
+  "defense_bonus": 50,
+  "food_yield": 0,
+  "production_yield": 1,
+  "gold_yield": 0,
+  "base_image": "assets/tiles/mountains/base.png",
+  "variants": {
+    "isolated": "assets/tiles/mountains/isolated.png",
+    "fully_surrounded": "assets/tiles/mountains/surrounded.png",
+    "vertical_edge_right": "assets/tiles/mountains/edge_right.png",
+    "vertical_edge_left": "assets/tiles/mountains/edge_left.png",
+    "horizontal_edge_top": "assets/tiles/mountains/edge_top.png",
+    "horizontal_edge_bottom": "assets/tiles/mountains/edge_bottom.png",
+    "inner_corner_top_right": "assets/tiles/mountains/inner_corner_tr.png",
+    "inner_corner_top_left": "assets/tiles/mountains/inner_corner_tl.png",
+    "inner_corner_bottom_right": "assets/tiles/mountains/inner_corner_br.png",
+    "inner_corner_bottom_left": "assets/tiles/mountains/inner_corner_bl.png",
+    "outer_corner_top_right": "assets/tiles/mountains/outer_corner_tr.png",
+    "outer_corner_top_left": "assets/tiles/mountains/outer_corner_tl.png",
+    "outer_corner_bottom_right": "assets/tiles/mountains/outer_corner_br.png",
+    "outer_corner_bottom_left": "assets/tiles/mountains/outer_corner_bl.png"
+  },
+  "passable": false,
+  "can_found_city": false,
+  "description": "Rugged elevated terrain that blocks movement but provides strategic defensive positions."
 }

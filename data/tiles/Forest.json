@@ -1,6 +1,30 @@
 {
-  "name": "Forest",
+  "name": "forest",
+  "display_name": "Forest",
   "movement_cost": 2,
-  "defense_bonus": 1,
-  "color": "darkgreen"
+  "defense_bonus": 25,
+  "food_yield": 1,
+  "production_yield": 1,
+  "gold_yield": 0,
+  "base_image": "assets/tiles/forest/base.png",
+  "variants": {
+    "isolated": "assets/tiles/forest/isolated.png",
+    "fully_surrounded": "assets/tiles/forest/surrounded.png",
+    "vertical_edge_right": "assets/tiles/forest/edge_right.png",
+    "vertical_edge_left": "assets/tiles/forest/edge_left.png",
+    "horizontal_edge_top": "assets/tiles/forest/edge_top.png",
+    "horizontal_edge_bottom": "assets/tiles/forest/edge_bottom.png",
+    "inner_corner_top_right": "assets/tiles/forest/inner_corner_tr.png",
+    "inner_corner_top_left": "assets/tiles/forest/inner_corner_tl.png",
+    "inner_corner_bottom_right": "assets/tiles/forest/inner_corner_br.png",
+    "inner_corner_bottom_left": "assets/tiles/forest/inner_corner_bl.png",
+    "outer_corner_top_right": "assets/tiles/forest/outer_corner_tr.png",
+    "outer_corner_top_left": "assets/tiles/forest/outer_corner_tl.png",
+    "outer_corner_bottom_right": "assets/tiles/forest/outer_corner_br.png",
+    "outer_corner_bottom_left": "assets/tiles/forest/outer_corner_bl.png"
+  },
+  "passable": true,
+  "can_found_city": true,
+  "can_be_cleared": true,
+  "description": "Dense woodland providing wood resources, moderate food, and defensive cover for units."
 }

@@ -1,6 +1,29 @@
 {
-  "name": "Grassland",
+  "name": "grassland",
+  "display_name": "Grassland",
   "movement_cost": 1,
   "defense_bonus": 0,
-  "color": "green"
+  "food_yield": 2,
+  "production_yield": 0,
+  "gold_yield": 0,
+  "base_image": "assets/tiles/grassland/base.png",
+  "variants": {
+    "isolated": "assets/tiles/grassland/isolated.png",
+    "fully_surrounded": "assets/tiles/grassland/surrounded.png",
+    "vertical_edge_right": "assets/tiles/grassland/edge_right.png",
+    "vertical_edge_left": "assets/tiles/grassland/edge_left.png",
+    "horizontal_edge_top": "assets/tiles/grassland/edge_top.png",
+    "horizontal_edge_bottom": "assets/tiles/grassland/edge_bottom.png",
+    "inner_corner_top_right": "assets/tiles/grassland/inner_corner_tr.png",
+    "inner_corner_top_left": "assets/tiles/grassland/inner_corner_tl.png",
+    "inner_corner_bottom_right": "assets/tiles/grassland/inner_corner_br.png",
+    "inner_corner_bottom_left": "assets/tiles/grassland/inner_corner_bl.png",
+    "outer_corner_top_right": "assets/tiles/grassland/outer_corner_tr.png",
+    "outer_corner_top_left": "assets/tiles/grassland/outer_corner_tl.png",
+    "outer_corner_bottom_right": "assets/tiles/grassland/outer_corner_br.png",
+    "outer_corner_bottom_left": "assets/tiles/grassland/outer_corner_bl.png"
+  },
+  "passable": true,
+  "can_found_city": true,
+  "description": "Fertile plains with abundant grass, ideal for agriculture and early settlements."
 }

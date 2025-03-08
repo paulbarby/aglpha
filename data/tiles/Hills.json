@@ -1,6 +1,29 @@
 {
-  "name": "Hills",
+  "name": "hills",
+  "display_name": "Hills",
   "movement_cost": 2,
-  "defense_bonus": 1,
-  "color": "brown"
+  "defense_bonus": 25,
+  "food_yield": 1,
+  "production_yield": 1,
+  "gold_yield": 0,
+  "base_image": "assets/tiles/hills/base.png",
+  "variants": {
+    "isolated": "assets/tiles/hills/isolated.png",
+    "fully_surrounded": "assets/tiles/hills/surrounded.png",
+    "vertical_edge_right": "assets/tiles/hills/edge_right.png",
+    "vertical_edge_left": "assets/tiles/hills/edge_left.png",
+    "horizontal_edge_top": "assets/tiles/hills/edge_top.png",
+    "horizontal_edge_bottom": "assets/tiles/hills/edge_bottom.png",
+    "inner_corner_top_right": "assets/tiles/hills/inner_corner_tr.png",
+    "inner_corner_top_left": "assets/tiles/hills/inner_corner_tl.png",
+    "inner_corner_bottom_right": "assets/tiles/hills/inner_corner_br.png",
+    "inner_corner_bottom_left": "assets/tiles/hills/inner_corner_bl.png",
+    "outer_corner_top_right": "assets/tiles/hills/outer_corner_tr.png",
+    "outer_corner_top_left": "assets/tiles/hills/outer_corner_tl.png",
+    "outer_corner_bottom_right": "assets/tiles/hills/outer_corner_br.png",
+    "outer_corner_bottom_left": "assets/tiles/hills/outer_corner_bl.png"
+  },
+  "passable": true,
+  "can_found_city": true,
+  "description": "Elevated terrain that slows movement but provides good production and defensive advantages."
 }

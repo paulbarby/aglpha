@@ -1,6 +1,29 @@
 {
-  "name": "Desert",
+  "name": "desert",
+  "display_name": "Desert",
   "movement_cost": 1,
   "defense_bonus": 0,
-  "color": "sandybrown"
+  "food_yield": 0,
+  "production_yield": 0,
+  "gold_yield": 0,
+  "base_image": "assets/tiles/desert/base.png",
+  "variants": {
+    "isolated": "assets/tiles/desert/isolated.png",
+    "fully_surrounded": "assets/tiles/desert/surrounded.png",
+    "vertical_edge_right": "assets/tiles/desert/edge_right.png",
+    "vertical_edge_left": "assets/tiles/desert/edge_left.png",
+    "horizontal_edge_top": "assets/tiles/desert/edge_top.png",
+    "horizontal_edge_bottom": "assets/tiles/desert/edge_bottom.png",
+    "inner_corner_top_right": "assets/tiles/desert/inner_corner_tr.png",
+    "inner_corner_top_left": "assets/tiles/desert/inner_corner_tl.png",
+    "inner_corner_bottom_right": "assets/tiles/desert/inner_corner_br.png",
+    "inner_corner_bottom_left": "assets/tiles/desert/inner_corner_bl.png",
+    "outer_corner_top_right": "assets/tiles/desert/outer_corner_tr.png",
+    "outer_corner_top_left": "assets/tiles/desert/outer_corner_tl.png",
+    "outer_corner_bottom_right": "assets/tiles/desert/outer_corner_br.png",
+    "outer_corner_bottom_left": "assets/tiles/desert/outer_corner_bl.png"
+  },
+  "passable": true,
+  "can_found_city": true,
+  "description": "Arid land with little vegetation, harsh for agriculture but may hide valuable resources."
 }

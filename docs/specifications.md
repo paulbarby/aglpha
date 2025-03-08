@@ -45,7 +45,7 @@ This document outlines the specifications for a strategy game inspired by the Ci
 ### **Cities**
 
 - **City Development**:
-  - Settlers establish cities.
+  - Caravans establish cities.
   - Cities require food to grow and resources to build structures and train units.
   - Growth is influenced by resource availability and trade routes.
   - Structures such as **Granaries**, **Workshops**, and **Factories** improve resource output.

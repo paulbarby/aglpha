@@ -1,6 +1,6 @@
 import pygame
 from src.ui.ui_component import UIComponent
-from src.utils.logger import Logger, try_except
+from src.utils.logger import Logger
 
 class Button(UIComponent):
     def __init__(self, id, text, position, size, font_size=32, 
@@ -22,12 +22,10 @@ class Button(UIComponent):
         self.border_width = 2            # 2px border width
         self.border_radius = 10          # Rounded corners
         
-    @try_except
     def initialize(self):
         self.font = pygame.font.SysFont(None, self.font_size)
         self.rendered_text = self.font.render(self.text, True, self.text_color)
     
-    @try_except
     def set_text(self, new_text):
         """Set new button text and update the rendered text."""
         self.text = new_text
@@ -37,15 +35,15 @@ class Button(UIComponent):
         self.rendered_text = self.font.render(self.text, True, self.text_color)
         
     def set_action(self, action):
+        # debug
+        Logger().debug(f"Setting action for button {self.id}")
         self.action = action
         
-    @try_except
     def contains_point(self, point):
         x, y = point
         return (self.position[0] <= x <= self.position[0] + self.size[0] and
                 self.position[1] <= y <= self.position[1] + self.size[1])
     
-    @try_except
     def handle_mouse_move(self, pos):
         was_hovered = self.is_hovered
         self.is_hovered = self.contains_point(pos)
@@ -61,14 +59,14 @@ class Button(UIComponent):
             return True
         return False
     
-    @try_except
     def handle_click(self, pos):
+        # debug
+        Logger().debug(f"Handling click for button {self.id}")
         if self.contains_point(pos) and self.action:
             self.action()
             return True
         return False
     
-    @try_except
     def render(self, screen):
         if not self.visible:
             return
@@ -89,7 +87,6 @@ class Button(UIComponent):
         
         screen.blit(self.rendered_text, (text_x, text_y))
         
-    @try_except
     def is_clicked(self, mouse_pos):
         """Check if the button is clicked without triggering the action."""
         if not hasattr(self, 'rect'):

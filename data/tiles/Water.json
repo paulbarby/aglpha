@@ -1,6 +1,30 @@
 {
-  "name": "Water",
+  "name": "water",
+  "display_name": "Water",
   "movement_cost": 2,
   "defense_bonus": 0,
-  "color": "blue"
+  "food_yield": 1,
+  "production_yield": 0,
+  "gold_yield": 1,
+  "base_image": "assets/tiles/water/base.png",
+  "variants": {
+    "isolated": "assets/tiles/water/isolated.png",
+    "fully_surrounded": "assets/tiles/water/surrounded.png",
+    "vertical_edge_right": "assets/tiles/water/edge_right.png",
+    "vertical_edge_left": "assets/tiles/water/edge_left.png",
+    "horizontal_edge_top": "assets/tiles/water/edge_top.png",
+    "horizontal_edge_bottom": "assets/tiles/water/edge_bottom.png",
+    "inner_corner_top_right": "assets/tiles/water/inner_corner_tr.png",
+    "inner_corner_top_left": "assets/tiles/water/inner_corner_tl.png",
+    "inner_corner_bottom_right": "assets/tiles/water/inner_corner_br.png",
+    "inner_corner_bottom_left": "assets/tiles/water/inner_corner_bl.png",
+    "outer_corner_top_right": "assets/tiles/water/outer_corner_tr.png",
+    "outer_corner_top_left": "assets/tiles/water/outer_corner_tl.png",
+    "outer_corner_bottom_right": "assets/tiles/water/outer_corner_br.png",
+    "outer_corner_bottom_left": "assets/tiles/water/outer_corner_bl.png"
+  },
+  "passable": true,
+  "naval_only": true,
+  "can_found_city": false,
+  "description": "Bodies of water that can be traversed by naval units and provide food and trade routes."
 }

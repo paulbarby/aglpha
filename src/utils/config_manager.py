@@ -1,7 +1,6 @@
 import os
 import configparser
-from src.utils.logger import Logger, try_except
-
+from src.utils.logger import Logger
 class ConfigManager:
     """
     Handles loading and saving of game configuration settings.
@@ -22,7 +21,7 @@ class ConfigManager:
         self.load_config()
         self.logger.info("Config manager initialized")
     
-    @try_except
+
     def load_config(self):
         """Load configuration from config.ini file."""
         if os.path.exists(self.config_path):
@@ -31,7 +30,7 @@ class ConfigManager:
         else:
             self.logger.warning(f"Config file not found at {self.config_path}, using defaults")
     
-    @try_except
+
     def save_config(self):
         """Save current configuration to config.ini file."""
         with open(self.config_path, 'w') as configfile:

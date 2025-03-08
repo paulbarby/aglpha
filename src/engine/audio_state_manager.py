@@ -1,6 +1,5 @@
 from enum import Enum, auto
-from src.utils.logger import Logger, try_except
-
+from src.utils.logger import Logger
 class GameAudioState(Enum):
     """Enum for various game audio states."""
     MAIN_MENU = auto()
@@ -35,7 +34,7 @@ class AudioStateManager:
         
         self.logger.info("Audio state manager initialized")
     
-    @try_except
+
     def change_state(self, new_state):
         """Change the audio state and play appropriate music/sounds."""
         if new_state == self.current_state:
@@ -62,7 +61,7 @@ class AudioStateManager:
                 
         self.current_state = new_state
     
-    @try_except
+
     def play_event_sound(self, sound_name):
         """Play a specific sound effect regardless of state."""
         self.logger.debug(f"Playing event sound: {sound_name}")

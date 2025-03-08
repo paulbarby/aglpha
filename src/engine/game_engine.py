@@ -10,7 +10,7 @@ from src.player.player_manager import PlayerManager
 from src.ui.sound_manager import SoundManager
 from src.engine.audio_state_manager import AudioStateManager, GameAudioState
 from src.ui.options_menu import OptionsMenuScreen
-from src.utils.logger import Logger, try_except
+from src.utils.logger import Logger
 from src.utils.sound_assets_index import sound_assets
 from src.utils.config_manager import config_manager
 import os
@@ -59,13 +59,11 @@ class GameEngine:
         
         self.logger.info("Game engine initialized successfully")
 
-    @try_except
     def set_screen(self, screen):
         """Set the game screen reference."""
         self.screen = screen
         self.logger.info("Game screen reference set")
 
-    @try_except
     def _load_default_audio(self):
         """Load the default game audio files."""
         self.logger.info("Loading audio assets...")
@@ -149,7 +147,6 @@ class GameEngine:
         # Ensure essential audio is defined for the audio state manager
         self._ensure_essential_audio_mappings()
     
-    @try_except
     def _validate_and_repair_json(self, json_file_path):
         """Validate and attempt to repair common JSON syntax errors."""
         try:
@@ -201,7 +198,6 @@ class GameEngine:
             self.logger.error(f"Error validating JSON file: {str(e)}")
             return None
     
-    @try_except
     def _display_json_error_location(self, json_file_path, error):
         """Display the location of a JSON error with context."""
         try:
@@ -242,7 +238,6 @@ class GameEngine:
         except Exception as e:
             self.logger.debug(f"Error displaying JSON error location: {str(e)}")
 
-    @try_except
     def _ensure_essential_audio_mappings(self):
         """Ensure all required audio for the state manager exists in some form."""
         self.logger.info("Ensuring essential audio mappings...")
@@ -349,7 +344,6 @@ class GameEngine:
         
         self.logger.info("Audio mappings completed.")
     
-    @try_except
     def transition_to_options_menu(self):
         """Transition to the options menu."""
         self.logger.info("Transitioning to options menu")
@@ -362,7 +356,6 @@ class GameEngine:
             self.logger.debug("Changing audio state to OPTIONS_MENU")
         self.audio_state_manager.change_state(GameAudioState.OPTIONS_MENU)
     
-    @try_except
     def return_to_main_menu(self):
         """Return to the main menu from options."""
         self.logger.info("Returning to main menu from options")
@@ -375,13 +368,11 @@ class GameEngine:
         # Ensure settings are saved when returning from options
         self.save_settings()
     
-    @try_except
     def save_settings(self):
         """Save all current settings to config file."""
         # Settings are saved automatically when changed via the config_manager
         self.logger.info("Game settings saved")
         
-    @try_except
     def shutdown(self):
         """Perform cleanup operations before shutting down the game."""
         self.logger.info("Game shutting down, saving settings...")
@@ -394,29 +385,28 @@ class GameEngine:
         
         self.logger.info("Game shutdown complete")
         
-    @try_except
     def handle_event(self, event):
         """Handle game events."""
+
+        # Handle options menu events first if active (PRIORITY)
+        if self.options_menu:
+            # Let options menu handle the event first
+            handled = self.options_menu.handle_event(event)
+            
+            # If options menu handled it or indicated it needs focus, don't process further
+            if handled:
+                return True
+                
+            # Check if this is a click event that might have closed the options menu
+            if hasattr(event, 'type') and event.type == pygame.MOUSEBUTTONDOWN and not self.options_menu:
+                # Options menu was closed during event handling (back button was clicked)
+                # Prevent this same click from being processed by the main menu
+                return True
+
         # Check for quit event first to ensure we save settings
         if hasattr(event, 'type') and event.type == pygame.QUIT:
             self.shutdown()
             return True  # Event was handled
-        
-        # Handle options menu events first if active (PRIORITY)
-        if self.options_menu:
-            try:
-                # Let options menu handle the event first
-                handled = self.options_menu.handle_event(event)
-                
-                # If options menu handled it or indicated it needs focus, don't process further
-                if handled:
-                    return True
-            except Exception as e:
-                self.logger.error(f"Error in options menu event handling: {str(e)}")
-                # Don't kill the game for options menu errors, return to main menu
-                self.logger.warning("Returning to main menu due to options menu error")
-                self.return_to_main_menu()
-                return True  # Mark as handled to prevent further processing
         
         # Only if options menu is not active or didn't handle the event:
         if hasattr(event, 'type'):
@@ -440,7 +430,6 @@ class GameEngine:
         
         return False  # Event wasn't specifically handled
     
-    @try_except
     def update(self):
         """Update game state."""
         # Only update game components if not in options menu
@@ -460,7 +449,6 @@ class GameEngine:
                 self.logger.error(f"Error updating options menu: {str(e)}")
                 self.return_to_main_menu()
     
-    @try_except
     def render(self, screen):
         """Render the current game state."""
         # First check if options menu is active and render it

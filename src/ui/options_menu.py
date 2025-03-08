@@ -1,7 +1,7 @@
 import pygame
 from .ui_component import UIComponent
 from .button import Button
-from src.utils.logger import Logger, try_except
+from src.utils.logger import Logger
 import time  # Add this import for time.sleep
 
 class VolumeSlider(UIComponent):
@@ -70,7 +70,7 @@ class VolumeSlider(UIComponent):
 class OptionsMenuScreen:
     """Options menu screen with volume controls."""
     
-    @try_except
+
     def __init__(self, screen, sound_manager, back_callback):
         self.screen = screen
         self.sound_manager = sound_manager
@@ -149,78 +149,59 @@ class OptionsMenuScreen:
             # Only update button text if operation was successful
             new_state = self.sound_manager.music_enabled
             self.music_toggle_btn.set_text("Music: ON" if new_state else "Music: OFF")
-    
+           
     def toggle_sound(self):
         """Toggle sound effects on/off."""
-        try:
-            new_state = not self.sound_manager.sound_enabled
-            self.sound_manager.enable_sound(new_state)
-            # Use set_text instead of directly modifying text
-            self.sound_toggle_btn.set_text("Sound: ON" if new_state else "Sound: OFF")
-        except Exception as e:
-            logger = Logger()
-            logger.error(f"Failed to toggle sound: {str(e)}")
-            # Don't change button state if there was an error
-    
-    @try_except
+        new_state = not self.sound_manager.sound_enabled
+        self.sound_manager.enable_sound(new_state)
+        # Use set_text instead of directly modifying text
+        self.sound_toggle_btn.set_text("Sound: ON" if new_state else "Sound: OFF")
+
     def on_master_volume_change(self, value):
         """Handle master volume slider change."""
         self.sound_manager.set_master_volume(value)
+        return True  # Operation was successful
     
-    @try_except
+
     def on_music_volume_change(self, value):
         """Handle music volume slider change."""
         self.sound_manager.set_music_volume(value)
+        return True  # Operation was successful
     
-    @try_except
+
     def on_sound_volume_change(self, value):
         """Handle sound effects volume slider change."""
         self.sound_manager.set_sound_volume(value)
+        return True  # Operation was successful
     
-    @try_except
+
     def on_back_clicked(self):
         """Handle back button click."""
+        logger = Logger()
+        logger.info("Back button clicked in options menu")
+        # Call back_callback to return to previous screen
         self.back_callback()
     
-    @try_except
+
     def handle_event(self, event):
         """Handle UI events."""
         handled = False
         
         # Volume sliders have their own handle_event method
-        try:
-            self.master_slider.handle_event(event)
-            self.music_slider.handle_event(event)
-            self.sound_slider.handle_event(event)
-        except Exception as e:
-            Logger().error(f"Error in slider handling: {str(e)}")
-            # Don't fail completely on slider errors
-        
-        # Handle button events based on event type
-        if event.type == pygame.MOUSEMOTION:
-            # Handle mouse movement for buttons
-            try:
-                self.music_toggle_btn.handle_mouse_move(event.pos)
-                self.sound_toggle_btn.handle_mouse_move(event.pos)
-                self.back_button.handle_mouse_move(event.pos)
-            except Exception as e:
-                Logger().error(f"Error in button hover handling: {str(e)}")
-        
-        elif event.type == pygame.MOUSEBUTTONDOWN and event.button == 1:  # Left click
-            try:
-                # Check if any button was clicked and return True if so
-                if self.music_toggle_btn.is_clicked(event.pos):
-                    self.music_toggle_btn.handle_click(event.pos)
-                    handled = True
-                elif self.sound_toggle_btn.is_clicked(event.pos):
-                    self.sound_toggle_btn.handle_click(event.pos)
-                    handled = True
-                elif self.back_button.is_clicked(event.pos):
-                    self.back_button.handle_click(event.pos)
-                    handled = True
-            except Exception as e:
-                Logger().error(f"Error in button click handling: {str(e)}")
-                # Don't propagate errors further
+        handled = self.master_slider.handle_event(event)
+        handled = self.music_slider.handle_event(event)
+        handled = self.sound_slider.handle_event(event)
+    
+        # Handle button events
+        if event.type == pygame.MOUSEBUTTONDOWN and event.button == 1 and not handled:
+            pos = event.pos
+            # Use handle_click for consistent behavior
+            if self.music_toggle_btn.handle_click(pos):
+                handled = True
+            elif self.sound_toggle_btn.handle_click(pos):
+                handled = True
+            elif self.back_button.handle_click(pos):
+                handled = True
         
         # Return True if we handled the event to prevent further processing
         return handled
@@ -229,7 +210,7 @@ class OptionsMenuScreen:
         """Update the options menu screen."""
         pass
         
-    @try_except
+
     def draw(self):
         """Draw the options menu screen."""
         # Draw background
@@ -266,71 +247,49 @@ class OptionsMenuScreen:
             Boolean: True if operation was successful, False otherwise
         """
         logger = Logger()
-        try:
-            if not hasattr(self.sound_manager, "music_enabled"):
-                logger.error("Sound manager has no music_enabled attribute")
-                return False
-                
-            current_state = self.sound_manager.music_enabled
-            
-            # If enable is specified, use that value, otherwise toggle current state
-            new_state = not current_state if enable is None else enable
-            
-            logger.info(f"Music state changing from {current_state} to {new_state}")
-            
-            # First pause any currently playing music if turning off
-            if not new_state and current_state:
-                try:
-                    self.sound_manager.stop_music(fadeout=1000)
-                except Exception as e:
-                    logger.error(f"Failed to stop music: {str(e)}")
-                    # Continue anyway - this is non-critical
-            
-            # Now set the new state - use enable_music method if available
-            try:
-                if hasattr(self.sound_manager, "enable_music") and callable(getattr(self.sound_manager, "enable_music")):
-                    self.sound_manager.enable_music(new_state)
-                else:
-                    self.sound_manager.music_enabled = new_state
-            except Exception as e:
-                logger.error(f"Failed to set music enabled state: {str(e)}")
-                return False
-            
-            # Update config
-            from src.utils.config_manager import config_manager
-            try:
-                config_manager.set_value("AUDIO", "music_enabled", new_state)
-            except Exception as e:
-                logger.error(f"Failed to save music setting to config: {str(e)}")
-                # Non-critical error, continue
-            
-            # If turning on, restart music with careful error handling
-            if new_state and not current_state:
-                try:
-                    # Small delay to allow state to update
-                    time.sleep(0.1)
-                    
-                    # Find appropriate music to play based on context
-                    if hasattr(self, 'back_callback') and self.back_callback:
-                        # We're in options menu, use menu music if available
-                        try:
-                            if hasattr(self.sound_manager, "play_music") and callable(getattr(self.sound_manager, "play_music")):
-                                self.sound_manager.play_music("menu", fadein=1000)
-                        except Exception as e:
-                            logger.error(f"Failed to start menu music: {str(e)}")
-                            # Try a fallback if available
-                            try:
-                                if hasattr(self.sound_manager, "play_default_music"):
-                                    self.sound_manager.play_default_music()
-                            except:
-                                # Last resort - ignore if this fails
-                                pass
-                except Exception as e:
-                    logger.error(f"Failed to restart music: {str(e)}")
-                    # This is non-critical, continue
-            
-            return True  # Operation was successful
-            
-        except Exception as e:
-            logger.error(f"Music toggle failed with unhandled error: {str(e)}")
+        logger.info(f"Music toggle requested with enable={enable}")
+
+        if not hasattr(self.sound_manager, "music_enabled"):
+            logger.error("Sound manager has no music_enabled attribute")
             return False
+            
+        current_state = self.sound_manager.music_enabled
+        
+        # If enable is specified, use that value, otherwise toggle current state
+        new_state = not current_state if enable is None else enable
+        
+        logger.info(f"Music state changing from {current_state} to {new_state}")
+        
+        # First pause any currently playing music if turning off
+        if not new_state and current_state:
+            self.sound_manager.stop_music(fadeout=1000)
+            
+        # Now set the new state - use enable_music method if available
+        if hasattr(self.sound_manager, "enable_music") and callable(getattr(self.sound_manager, "enable_music")):
+            self.sound_manager.enable_music(new_state)
+        else:
+            self.sound_manager.music_enabled = new_state
+        
+        # Update config
+        from src.utils.config_manager import config_manager
+        config_manager.set_value("AUDIO", "music_enabled", new_state)
+        
+        # If turning on, restart music with careful error handling
+        if new_state and not current_state:
+            # Find appropriate music to play based on context
+            if hasattr(self, 'back_callback') and self.back_callback:
+                # We're in options menu, use menu music if available
+                try:
+                    if hasattr(self.sound_manager, "play_music") and callable(getattr(self.sound_manager, "play_music")):
+                        self.sound_manager.play_music("menu", fadein=1000)
+                except Exception as e:
+                    logger.error(f"Failed to start menu music: {str(e)}")
+                    # Try a fallback if available
+                    try:
+                        if hasattr(self.sound_manager, "play_default_music"):
+                            self.sound_manager.play_default_music()
+                    except:
+                        # Last resort - ignore if this fails
+                        pass
+            
+        return True  # Operation was successful
