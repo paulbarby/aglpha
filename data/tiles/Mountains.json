@@ -1,0 +1,6 @@
+{
+  "name": "Mountains",
+  "movement_cost": 3,
+  "defense_bonus": 2,
+  "color": "gray"
+}

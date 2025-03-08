@@ -1,0 +1,11 @@
+{
+  "name": "Canoes",
+  "age": "Tribal Age",
+  "classification": "Naval",
+  "stats": {
+    "health": 5,
+    "attack_power": 2,
+    "defense": 2,
+    "move_range": 2
+  }
+}

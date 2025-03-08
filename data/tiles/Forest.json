@@ -1,0 +1,6 @@
+{
+  "name": "Forest",
+  "movement_cost": 2,
+  "defense_bonus": 1,
+  "color": "darkgreen"
+}

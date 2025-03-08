@@ -1,0 +1,11 @@
+{
+  "name": "Triremes",
+  "age": "Bronze Age",
+  "classification": "Naval",
+  "stats": {
+    "health": 100,
+    "attack_power": 10,
+    "defense": 5,
+    "move_range": 3
+  }
+}

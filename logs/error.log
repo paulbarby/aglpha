@@ -1,0 +1,594 @@
+2025-03-08 10:17:03,744 [INFO] Logger initialized
+2025-03-08 10:17:03,744 [INFO] Configuration loaded from C:\Users\paulb\Documents\Development\Fun\civ-game1\config.ini
+2025-03-08 10:17:03,745 [INFO] Config manager initialized
+2025-03-08 10:17:04,168 [INFO] Game engine initializing...
+2025-03-08 10:17:04,168 [INFO] Audio debug logging is ENABLED
+2025-03-08 10:17:04,172 [INFO] Sound system initialized successfully
+2025-03-08 10:17:04,172 [INFO] Audio settings loaded: master=1.0, music=0.5178571428571429, sound=1.0, music_enabled=True, sound_enabled=True
+2025-03-08 10:17:04,172 [INFO] Audio state manager initialized
+2025-03-08 10:17:04,172 [INFO] Loading audio assets...
+2025-03-08 10:17:04,172 [DEBUG] Available music tracks: ['background_humm_of_a_(1)', 'background_humm_of_a_(2)', 'background_humm_of_a', 'battering_ram_smashi_(1)', 'battering_ram_smashi_(2)', 'battering_ram_smashi_(3)', 'battering_ram_smashi', 'battle_cry_(1)', 'battle_cry_(2)', 'battle_cry_(3)', 'battle_cry_(4)', 'battle_cry_(5)', 'battle_cry_(6)', 'battle_cry_(7)', 'battle_cry', 'birds_chirping_(1)', 'birds_chirping_(2)', 'birds_chirping_(3)', 'birds_chirping', 'bombs_exploding_(1)', 'bombs_exploding_(2)', 'bombs_exploding_(3)', 'bombs_exploding', "bosun's_whistle_(1)", "bosun's_whistle", 'cannon_firing_(1)', 'cannon_firing_(2)', 'cannon_firing_(3)', 'cannon_firing', 'chip_tune_button_cli_(1)', 'chip_tune_button_cli_(2)', 'chip_tune_button_cli_(3)', 'chip_tune_button_cli_(4)', 'chip_tune_button_cli', 'cows_mooing_(1)', 'cows_mooing_(2)', 'cows_mooing_(3)', 'cows_mooing', 'defeated_cry', 'eagle_calling_(1)', 'eagle_calling_(2)', 'eagle_calling_(3)', 'eagle_calling', 'failure_honk_(1)', 'failure_honk_(2)', 'failure_honk_(3)', 'failure_honk', 'failure_horn_(1)', 'failure_horn_(2)', 'failure_horn_(3)', 'failure_horn', 'fail_alarm_(1)', 'fail_alarm_(2)', 'fail_alarm_(3)', 'fail_alarm', 'fail_ding_(1)', 'fail_ding_(2)', 'fail_ding_(3)', 'fail_ding', 'frogs_chirping_(1)', 'frogs_chirping_(2)', 'frogs_chirping_(3)', 'frogs_chirping', 'gun_firing_(1)', 'gun_firing_(2)', 'gun_firing_(3)', 'gun_firing', 'horses_galloping', 'horses_running', 'jet_taking_off_(1)', 'jet_taking_off_(2)', 'jet_taking_off_(3)', 'jet_taking_off', 'machine_gun_firing_(1)', 'machine_gun_firing_(2)', 'machine_gun_firing', 'placing_barrel_in_a__(1)', 'placing_barrel_in_a__(2)', 'placing_barrel_in_a__(3)', 'placing_barrel_in_a_', 'ship_sail_filling_wi', 'ship_saling', 'slow_death_crys_(1)', 'slow_death_crys_(2)', 'slow_death_crys_(3)', 'slow_death_crys', 'success_ding_(1)', 'success_ding_(2)', 'success_ding_(3)', 'success_ding', 'sword_clashing_fight', 'tank_moving', 'victory_cheers', 'waves_crashing_(1)', 'waves_crashing_(2)', 'waves_crashing_(3)', 'waves_crashing', 'battle_music_1', 'battle_music_2', 'defeat_music_1', 'defeat_music_2', 'gameplay_music_1', 'gameplay_music_2', 'gameplay_music_3', 'gameplay_music_4', 'gameplay_music_5', 'gameplay_music_6', 'main_menu_music_1', 'main_menu_music_2', 'main_menu_music_3', 'victory_music_1', 'victory_music_2']
+2025-03-08 10:17:04,173 [DEBUG] Successfully registered music: background_humm_of_a_(1) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\background_humm_of_a (1).mp3
+2025-03-08 10:17:04,173 [DEBUG] Successfully loaded music: background_humm_of_a_(1) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\background_humm_of_a (1).mp3
+2025-03-08 10:17:04,174 [DEBUG] Successfully registered music: background_humm_of_a_(2) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\background_humm_of_a (2).mp3
+2025-03-08 10:17:04,174 [DEBUG] Successfully loaded music: background_humm_of_a_(2) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\background_humm_of_a (2).mp3
+2025-03-08 10:17:04,174 [DEBUG] Successfully registered music: background_humm_of_a from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\background_humm_of_a.mp3
+2025-03-08 10:17:04,174 [DEBUG] Successfully loaded music: background_humm_of_a from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\background_humm_of_a.mp3
+2025-03-08 10:17:04,174 [DEBUG] Successfully registered music: battering_ram_smashi_(1) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\battering_ram_smashi (1).mp3
+2025-03-08 10:17:04,174 [DEBUG] Successfully loaded music: battering_ram_smashi_(1) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\battering_ram_smashi (1).mp3
+2025-03-08 10:17:04,174 [DEBUG] Successfully registered music: battering_ram_smashi_(2) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\battering_ram_smashi (2).mp3
+2025-03-08 10:17:04,174 [DEBUG] Successfully loaded music: battering_ram_smashi_(2) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\battering_ram_smashi (2).mp3
+2025-03-08 10:17:04,174 [DEBUG] Successfully registered music: battering_ram_smashi_(3) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\battering_ram_smashi (3).mp3
+2025-03-08 10:17:04,175 [DEBUG] Successfully loaded music: battering_ram_smashi_(3) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\battering_ram_smashi (3).mp3
+2025-03-08 10:17:04,175 [DEBUG] Successfully registered music: battering_ram_smashi from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\battering_ram_smashi.mp3
+2025-03-08 10:17:04,175 [DEBUG] Successfully loaded music: battering_ram_smashi from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\battering_ram_smashi.mp3
+2025-03-08 10:17:04,176 [DEBUG] Successfully registered music: battle_cry_(1) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\battle_cry (1).mp3
+2025-03-08 10:17:04,176 [DEBUG] Successfully loaded music: battle_cry_(1) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\battle_cry (1).mp3
+2025-03-08 10:17:04,176 [DEBUG] Successfully registered music: battle_cry_(2) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\battle_cry (2).mp3
+2025-03-08 10:17:04,176 [DEBUG] Successfully loaded music: battle_cry_(2) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\battle_cry (2).mp3
+2025-03-08 10:17:04,176 [DEBUG] Successfully registered music: battle_cry_(3) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\battle_cry (3).mp3
+2025-03-08 10:17:04,176 [DEBUG] Successfully loaded music: battle_cry_(3) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\battle_cry (3).mp3
+2025-03-08 10:17:04,176 [DEBUG] Successfully registered music: battle_cry_(4) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\battle_cry (4).mp3
+2025-03-08 10:17:04,176 [DEBUG] Successfully loaded music: battle_cry_(4) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\battle_cry (4).mp3
+2025-03-08 10:17:04,177 [DEBUG] Successfully registered music: battle_cry_(5) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\battle_cry (5).mp3
+2025-03-08 10:17:04,177 [DEBUG] Successfully loaded music: battle_cry_(5) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\battle_cry (5).mp3
+2025-03-08 10:17:04,177 [DEBUG] Successfully registered music: battle_cry_(6) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\battle_cry (6).mp3
+2025-03-08 10:17:04,177 [DEBUG] Successfully loaded music: battle_cry_(6) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\battle_cry (6).mp3
+2025-03-08 10:17:04,177 [DEBUG] Successfully registered music: battle_cry_(7) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\battle_cry (7).mp3
+2025-03-08 10:17:04,177 [DEBUG] Successfully loaded music: battle_cry_(7) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\battle_cry (7).mp3
+2025-03-08 10:17:04,177 [DEBUG] Successfully registered music: battle_cry from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\battle_cry.mp3
+2025-03-08 10:17:04,177 [DEBUG] Successfully loaded music: battle_cry from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\battle_cry.mp3
+2025-03-08 10:17:04,178 [DEBUG] Successfully registered music: birds_chirping_(1) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\birds_chirping (1).mp3
+2025-03-08 10:17:04,178 [DEBUG] Successfully loaded music: birds_chirping_(1) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\birds_chirping (1).mp3
+2025-03-08 10:17:04,178 [DEBUG] Successfully registered music: birds_chirping_(2) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\birds_chirping (2).mp3
+2025-03-08 10:17:04,178 [DEBUG] Successfully loaded music: birds_chirping_(2) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\birds_chirping (2).mp3
+2025-03-08 10:17:04,178 [DEBUG] Successfully registered music: birds_chirping_(3) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\birds_chirping (3).mp3
+2025-03-08 10:17:04,178 [DEBUG] Successfully loaded music: birds_chirping_(3) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\birds_chirping (3).mp3
+2025-03-08 10:17:04,178 [DEBUG] Successfully registered music: birds_chirping from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\birds_chirping.mp3
+2025-03-08 10:17:04,178 [DEBUG] Successfully loaded music: birds_chirping from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\birds_chirping.mp3
+2025-03-08 10:17:04,179 [DEBUG] Successfully registered music: bombs_exploding_(1) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\bombs_exploding (1).mp3
+2025-03-08 10:17:04,179 [DEBUG] Successfully loaded music: bombs_exploding_(1) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\bombs_exploding (1).mp3
+2025-03-08 10:17:04,179 [DEBUG] Successfully registered music: bombs_exploding_(2) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\bombs_exploding (2).mp3
+2025-03-08 10:17:04,179 [DEBUG] Successfully loaded music: bombs_exploding_(2) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\bombs_exploding (2).mp3
+2025-03-08 10:17:04,179 [DEBUG] Successfully registered music: bombs_exploding_(3) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\bombs_exploding (3).mp3
+2025-03-08 10:17:04,179 [DEBUG] Successfully loaded music: bombs_exploding_(3) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\bombs_exploding (3).mp3
+2025-03-08 10:17:04,179 [DEBUG] Successfully registered music: bombs_exploding from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\bombs_exploding.mp3
+2025-03-08 10:17:04,180 [DEBUG] Successfully loaded music: bombs_exploding from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\bombs_exploding.mp3
+2025-03-08 10:17:04,180 [DEBUG] Successfully registered music: bosun's_whistle_(1) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\bosun's_whistle (1).mp3
+2025-03-08 10:17:04,180 [DEBUG] Successfully loaded music: bosun's_whistle_(1) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\bosun's_whistle (1).mp3
+2025-03-08 10:17:04,180 [DEBUG] Successfully registered music: bosun's_whistle from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\bosun's_whistle.mp3
+2025-03-08 10:17:04,180 [DEBUG] Successfully loaded music: bosun's_whistle from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\bosun's_whistle.mp3
+2025-03-08 10:17:04,180 [DEBUG] Successfully registered music: cannon_firing_(1) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\cannon_firing (1).mp3
+2025-03-08 10:17:04,180 [DEBUG] Successfully loaded music: cannon_firing_(1) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\cannon_firing (1).mp3
+2025-03-08 10:17:04,181 [DEBUG] Successfully registered music: cannon_firing_(2) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\cannon_firing (2).mp3
+2025-03-08 10:17:04,181 [DEBUG] Successfully loaded music: cannon_firing_(2) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\cannon_firing (2).mp3
+2025-03-08 10:17:04,181 [DEBUG] Successfully registered music: cannon_firing_(3) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\cannon_firing (3).mp3
+2025-03-08 10:17:04,181 [DEBUG] Successfully loaded music: cannon_firing_(3) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\cannon_firing (3).mp3
+2025-03-08 10:17:04,181 [DEBUG] Successfully registered music: cannon_firing from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\cannon_firing.mp3
+2025-03-08 10:17:04,181 [DEBUG] Successfully loaded music: cannon_firing from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\cannon_firing.mp3
+2025-03-08 10:17:04,181 [DEBUG] Successfully registered music: chip_tune_button_cli_(1) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\chip_tune_button_cli (1).mp3
+2025-03-08 10:17:04,181 [DEBUG] Successfully loaded music: chip_tune_button_cli_(1) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\chip_tune_button_cli (1).mp3
+2025-03-08 10:17:04,181 [DEBUG] Successfully registered music: chip_tune_button_cli_(2) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\chip_tune_button_cli (2).mp3
+2025-03-08 10:17:04,182 [DEBUG] Successfully loaded music: chip_tune_button_cli_(2) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\chip_tune_button_cli (2).mp3
+2025-03-08 10:17:04,182 [DEBUG] Successfully registered music: chip_tune_button_cli_(3) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\chip_tune_button_cli (3).mp3
+2025-03-08 10:17:04,182 [DEBUG] Successfully loaded music: chip_tune_button_cli_(3) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\chip_tune_button_cli (3).mp3
+2025-03-08 10:17:04,182 [DEBUG] Successfully registered music: chip_tune_button_cli_(4) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\chip_tune_button_cli (4).mp3
+2025-03-08 10:17:04,182 [DEBUG] Successfully loaded music: chip_tune_button_cli_(4) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\chip_tune_button_cli (4).mp3
+2025-03-08 10:17:04,182 [DEBUG] Successfully registered music: chip_tune_button_cli from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\chip_tune_button_cli.mp3
+2025-03-08 10:17:04,182 [DEBUG] Successfully loaded music: chip_tune_button_cli from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\chip_tune_button_cli.mp3
+2025-03-08 10:17:04,182 [DEBUG] Successfully registered music: cows_mooing_(1) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\cows_mooing (1).mp3
+2025-03-08 10:17:04,183 [DEBUG] Successfully loaded music: cows_mooing_(1) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\cows_mooing (1).mp3
+2025-03-08 10:17:04,183 [DEBUG] Successfully registered music: cows_mooing_(2) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\cows_mooing (2).mp3
+2025-03-08 10:17:04,183 [DEBUG] Successfully loaded music: cows_mooing_(2) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\cows_mooing (2).mp3
+2025-03-08 10:17:04,183 [DEBUG] Successfully registered music: cows_mooing_(3) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\cows_mooing (3).mp3
+2025-03-08 10:17:04,183 [DEBUG] Successfully loaded music: cows_mooing_(3) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\cows_mooing (3).mp3
+2025-03-08 10:17:04,183 [DEBUG] Successfully registered music: cows_mooing from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\cows_mooing.mp3
+2025-03-08 10:17:04,183 [DEBUG] Successfully loaded music: cows_mooing from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\cows_mooing.mp3
+2025-03-08 10:17:04,184 [DEBUG] Successfully registered music: defeated_cry from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\defeated_cry.mp3
+2025-03-08 10:17:04,184 [DEBUG] Successfully loaded music: defeated_cry from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\defeated_cry.mp3
+2025-03-08 10:17:04,184 [DEBUG] Successfully registered music: eagle_calling_(1) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\eagle_calling (1).mp3
+2025-03-08 10:17:04,184 [DEBUG] Successfully loaded music: eagle_calling_(1) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\eagle_calling (1).mp3
+2025-03-08 10:17:04,184 [DEBUG] Successfully registered music: eagle_calling_(2) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\eagle_calling (2).mp3
+2025-03-08 10:17:04,184 [DEBUG] Successfully loaded music: eagle_calling_(2) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\eagle_calling (2).mp3
+2025-03-08 10:17:04,185 [DEBUG] Successfully registered music: eagle_calling_(3) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\eagle_calling (3).mp3
+2025-03-08 10:17:04,185 [DEBUG] Successfully loaded music: eagle_calling_(3) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\eagle_calling (3).mp3
+2025-03-08 10:17:04,185 [DEBUG] Successfully registered music: eagle_calling from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\eagle_calling.mp3
+2025-03-08 10:17:04,185 [DEBUG] Successfully loaded music: eagle_calling from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\eagle_calling.mp3
+2025-03-08 10:17:04,185 [DEBUG] Successfully registered music: failure_honk_(1) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\failure_honk (1).mp3
+2025-03-08 10:17:04,185 [DEBUG] Successfully loaded music: failure_honk_(1) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\failure_honk (1).mp3
+2025-03-08 10:17:04,185 [DEBUG] Successfully registered music: failure_honk_(2) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\failure_honk (2).mp3
+2025-03-08 10:17:04,185 [DEBUG] Successfully loaded music: failure_honk_(2) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\failure_honk (2).mp3
+2025-03-08 10:17:04,186 [DEBUG] Successfully registered music: failure_honk_(3) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\failure_honk (3).mp3
+2025-03-08 10:17:04,186 [DEBUG] Successfully loaded music: failure_honk_(3) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\failure_honk (3).mp3
+2025-03-08 10:17:04,186 [DEBUG] Successfully registered music: failure_honk from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\failure_honk.mp3
+2025-03-08 10:17:04,186 [DEBUG] Successfully loaded music: failure_honk from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\failure_honk.mp3
+2025-03-08 10:17:04,186 [DEBUG] Successfully registered music: failure_horn_(1) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\failure_horn (1).mp3
+2025-03-08 10:17:04,186 [DEBUG] Successfully loaded music: failure_horn_(1) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\failure_horn (1).mp3
+2025-03-08 10:17:04,186 [DEBUG] Successfully registered music: failure_horn_(2) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\failure_horn (2).mp3
+2025-03-08 10:17:04,186 [DEBUG] Successfully loaded music: failure_horn_(2) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\failure_horn (2).mp3
+2025-03-08 10:17:04,186 [DEBUG] Successfully registered music: failure_horn_(3) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\failure_horn (3).mp3
+2025-03-08 10:17:04,187 [DEBUG] Successfully loaded music: failure_horn_(3) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\failure_horn (3).mp3
+2025-03-08 10:17:04,187 [DEBUG] Successfully registered music: failure_horn from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\failure_horn.mp3
+2025-03-08 10:17:04,187 [DEBUG] Successfully loaded music: failure_horn from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\failure_horn.mp3
+2025-03-08 10:17:04,187 [DEBUG] Successfully registered music: fail_alarm_(1) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\fail_alarm (1).mp3
+2025-03-08 10:17:04,187 [DEBUG] Successfully loaded music: fail_alarm_(1) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\fail_alarm (1).mp3
+2025-03-08 10:17:04,187 [DEBUG] Successfully registered music: fail_alarm_(2) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\fail_alarm (2).mp3
+2025-03-08 10:17:04,188 [DEBUG] Successfully loaded music: fail_alarm_(2) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\fail_alarm (2).mp3
+2025-03-08 10:17:04,188 [DEBUG] Successfully registered music: fail_alarm_(3) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\fail_alarm (3).mp3
+2025-03-08 10:17:04,188 [DEBUG] Successfully loaded music: fail_alarm_(3) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\fail_alarm (3).mp3
+2025-03-08 10:17:04,188 [DEBUG] Successfully registered music: fail_alarm from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\fail_alarm.mp3
+2025-03-08 10:17:04,188 [DEBUG] Successfully loaded music: fail_alarm from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\fail_alarm.mp3
+2025-03-08 10:17:04,188 [DEBUG] Successfully registered music: fail_ding_(1) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\fail_ding (1).mp3
+2025-03-08 10:17:04,189 [DEBUG] Successfully loaded music: fail_ding_(1) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\fail_ding (1).mp3
+2025-03-08 10:17:04,189 [DEBUG] Successfully registered music: fail_ding_(2) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\fail_ding (2).mp3
+2025-03-08 10:17:04,189 [DEBUG] Successfully loaded music: fail_ding_(2) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\fail_ding (2).mp3
+2025-03-08 10:17:04,189 [DEBUG] Successfully registered music: fail_ding_(3) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\fail_ding (3).mp3
+2025-03-08 10:17:04,189 [DEBUG] Successfully loaded music: fail_ding_(3) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\fail_ding (3).mp3
+2025-03-08 10:17:04,189 [DEBUG] Successfully registered music: fail_ding from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\fail_ding.mp3
+2025-03-08 10:17:04,189 [DEBUG] Successfully loaded music: fail_ding from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\fail_ding.mp3
+2025-03-08 10:17:04,189 [DEBUG] Successfully registered music: frogs_chirping_(1) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\frogs_chirping (1).mp3
+2025-03-08 10:17:04,189 [DEBUG] Successfully loaded music: frogs_chirping_(1) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\frogs_chirping (1).mp3
+2025-03-08 10:17:04,190 [DEBUG] Successfully registered music: frogs_chirping_(2) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\frogs_chirping (2).mp3
+2025-03-08 10:17:04,190 [DEBUG] Successfully loaded music: frogs_chirping_(2) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\frogs_chirping (2).mp3
+2025-03-08 10:17:04,190 [DEBUG] Successfully registered music: frogs_chirping_(3) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\frogs_chirping (3).mp3
+2025-03-08 10:17:04,190 [DEBUG] Successfully loaded music: frogs_chirping_(3) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\frogs_chirping (3).mp3
+2025-03-08 10:17:04,190 [DEBUG] Successfully registered music: frogs_chirping from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\frogs_chirping.mp3
+2025-03-08 10:17:04,190 [DEBUG] Successfully loaded music: frogs_chirping from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\frogs_chirping.mp3
+2025-03-08 10:17:04,190 [DEBUG] Successfully registered music: gun_firing_(1) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\gun_firing (1).mp3
+2025-03-08 10:17:04,190 [DEBUG] Successfully loaded music: gun_firing_(1) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\gun_firing (1).mp3
+2025-03-08 10:17:04,190 [DEBUG] Successfully registered music: gun_firing_(2) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\gun_firing (2).mp3
+2025-03-08 10:17:04,190 [DEBUG] Successfully loaded music: gun_firing_(2) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\gun_firing (2).mp3
+2025-03-08 10:17:04,191 [DEBUG] Successfully registered music: gun_firing_(3) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\gun_firing (3).mp3
+2025-03-08 10:17:04,191 [DEBUG] Successfully loaded music: gun_firing_(3) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\gun_firing (3).mp3
+2025-03-08 10:17:04,191 [DEBUG] Successfully registered music: gun_firing from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\gun_firing.mp3
+2025-03-08 10:17:04,191 [DEBUG] Successfully loaded music: gun_firing from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\gun_firing.mp3
+2025-03-08 10:17:04,191 [DEBUG] Successfully registered music: horses_galloping from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\horses_galloping.mp3
+2025-03-08 10:17:04,191 [DEBUG] Successfully loaded music: horses_galloping from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\horses_galloping.mp3
+2025-03-08 10:17:04,191 [DEBUG] Successfully registered music: horses_running from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\horses_running.mp3
+2025-03-08 10:17:04,191 [DEBUG] Successfully loaded music: horses_running from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\horses_running.mp3
+2025-03-08 10:17:04,191 [DEBUG] Successfully registered music: jet_taking_off_(1) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\jet_taking_off (1).mp3
+2025-03-08 10:17:04,192 [DEBUG] Successfully loaded music: jet_taking_off_(1) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\jet_taking_off (1).mp3
+2025-03-08 10:17:04,192 [DEBUG] Successfully registered music: jet_taking_off_(2) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\jet_taking_off (2).mp3
+2025-03-08 10:17:04,192 [DEBUG] Successfully loaded music: jet_taking_off_(2) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\jet_taking_off (2).mp3
+2025-03-08 10:17:04,192 [DEBUG] Successfully registered music: jet_taking_off_(3) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\jet_taking_off (3).mp3
+2025-03-08 10:17:04,192 [DEBUG] Successfully loaded music: jet_taking_off_(3) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\jet_taking_off (3).mp3
+2025-03-08 10:17:04,192 [DEBUG] Successfully registered music: jet_taking_off from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\jet_taking_off.mp3
+2025-03-08 10:17:04,192 [DEBUG] Successfully loaded music: jet_taking_off from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\jet_taking_off.mp3
+2025-03-08 10:17:04,192 [DEBUG] Successfully registered music: machine_gun_firing_(1) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\machine_gun_firing (1).mp3
+2025-03-08 10:17:04,192 [DEBUG] Successfully loaded music: machine_gun_firing_(1) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\machine_gun_firing (1).mp3
+2025-03-08 10:17:04,192 [DEBUG] Successfully registered music: machine_gun_firing_(2) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\machine_gun_firing (2).mp3
+2025-03-08 10:17:04,192 [DEBUG] Successfully loaded music: machine_gun_firing_(2) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\machine_gun_firing (2).mp3
+2025-03-08 10:17:04,193 [DEBUG] Successfully registered music: machine_gun_firing from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\machine_gun_firing.mp3
+2025-03-08 10:17:04,193 [DEBUG] Successfully loaded music: machine_gun_firing from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\machine_gun_firing.mp3
+2025-03-08 10:17:04,193 [DEBUG] Successfully registered music: placing_barrel_in_a__(1) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\placing_barrel_in_a_ (1).mp3
+2025-03-08 10:17:04,193 [DEBUG] Successfully loaded music: placing_barrel_in_a__(1) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\placing_barrel_in_a_ (1).mp3
+2025-03-08 10:17:04,193 [DEBUG] Successfully registered music: placing_barrel_in_a__(2) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\placing_barrel_in_a_ (2).mp3
+2025-03-08 10:17:04,193 [DEBUG] Successfully loaded music: placing_barrel_in_a__(2) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\placing_barrel_in_a_ (2).mp3
+2025-03-08 10:17:04,193 [DEBUG] Successfully registered music: placing_barrel_in_a__(3) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\placing_barrel_in_a_ (3).mp3
+2025-03-08 10:17:04,193 [DEBUG] Successfully loaded music: placing_barrel_in_a__(3) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\placing_barrel_in_a_ (3).mp3
+2025-03-08 10:17:04,193 [DEBUG] Successfully registered music: placing_barrel_in_a_ from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\placing_barrel_in_a_.mp3
+2025-03-08 10:17:04,193 [DEBUG] Successfully loaded music: placing_barrel_in_a_ from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\placing_barrel_in_a_.mp3
+2025-03-08 10:17:04,194 [DEBUG] Successfully registered music: ship_sail_filling_wi from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\ship_sail_filling_wi.mp3
+2025-03-08 10:17:04,194 [DEBUG] Successfully loaded music: ship_sail_filling_wi from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\ship_sail_filling_wi.mp3
+2025-03-08 10:17:04,194 [DEBUG] Successfully registered music: ship_saling from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\ship_saling.mp3
+2025-03-08 10:17:04,194 [DEBUG] Successfully loaded music: ship_saling from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\ship_saling.mp3
+2025-03-08 10:17:04,194 [DEBUG] Successfully registered music: slow_death_crys_(1) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\slow_death_crys (1).mp3
+2025-03-08 10:17:04,194 [DEBUG] Successfully loaded music: slow_death_crys_(1) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\slow_death_crys (1).mp3
+2025-03-08 10:17:04,194 [DEBUG] Successfully registered music: slow_death_crys_(2) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\slow_death_crys (2).mp3
+2025-03-08 10:17:04,194 [DEBUG] Successfully loaded music: slow_death_crys_(2) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\slow_death_crys (2).mp3
+2025-03-08 10:17:04,194 [DEBUG] Successfully registered music: slow_death_crys_(3) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\slow_death_crys (3).mp3
+2025-03-08 10:17:04,194 [DEBUG] Successfully loaded music: slow_death_crys_(3) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\slow_death_crys (3).mp3
+2025-03-08 10:17:04,195 [DEBUG] Successfully registered music: slow_death_crys from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\slow_death_crys.mp3
+2025-03-08 10:17:04,195 [DEBUG] Successfully loaded music: slow_death_crys from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\slow_death_crys.mp3
+2025-03-08 10:17:04,195 [DEBUG] Successfully registered music: success_ding_(1) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\success_ding (1).mp3
+2025-03-08 10:17:04,195 [DEBUG] Successfully loaded music: success_ding_(1) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\success_ding (1).mp3
+2025-03-08 10:17:04,195 [DEBUG] Successfully registered music: success_ding_(2) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\success_ding (2).mp3
+2025-03-08 10:17:04,195 [DEBUG] Successfully loaded music: success_ding_(2) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\success_ding (2).mp3
+2025-03-08 10:17:04,195 [DEBUG] Successfully registered music: success_ding_(3) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\success_ding (3).mp3
+2025-03-08 10:17:04,195 [DEBUG] Successfully loaded music: success_ding_(3) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\success_ding (3).mp3
+2025-03-08 10:17:04,195 [DEBUG] Successfully registered music: success_ding from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\success_ding.mp3
+2025-03-08 10:17:04,195 [DEBUG] Successfully loaded music: success_ding from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\success_ding.mp3
+2025-03-08 10:17:04,196 [DEBUG] Successfully registered music: sword_clashing_fight from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\sword_clashing_fight.mp3
+2025-03-08 10:17:04,196 [DEBUG] Successfully loaded music: sword_clashing_fight from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\sword_clashing_fight.mp3
+2025-03-08 10:17:04,196 [DEBUG] Successfully registered music: tank_moving from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\tank_moving.mp3
+2025-03-08 10:17:04,196 [DEBUG] Successfully loaded music: tank_moving from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\tank_moving.mp3
+2025-03-08 10:17:04,196 [DEBUG] Successfully registered music: victory_cheers from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\victory_cheers.mp3
+2025-03-08 10:17:04,196 [DEBUG] Successfully loaded music: victory_cheers from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\victory_cheers.mp3
+2025-03-08 10:17:04,196 [DEBUG] Successfully registered music: waves_crashing_(1) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\waves_crashing (1).mp3
+2025-03-08 10:17:04,196 [DEBUG] Successfully loaded music: waves_crashing_(1) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\waves_crashing (1).mp3
+2025-03-08 10:17:04,196 [DEBUG] Successfully registered music: waves_crashing_(2) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\waves_crashing (2).mp3
+2025-03-08 10:17:04,196 [DEBUG] Successfully loaded music: waves_crashing_(2) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\waves_crashing (2).mp3
+2025-03-08 10:17:04,196 [DEBUG] Successfully registered music: waves_crashing_(3) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\waves_crashing (3).mp3
+2025-03-08 10:17:04,197 [DEBUG] Successfully loaded music: waves_crashing_(3) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\waves_crashing (3).mp3
+2025-03-08 10:17:04,197 [DEBUG] Successfully registered music: waves_crashing from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\waves_crashing.mp3
+2025-03-08 10:17:04,197 [DEBUG] Successfully loaded music: waves_crashing from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\waves_crashing.mp3
+2025-03-08 10:17:04,197 [DEBUG] Successfully registered music: battle_music_1 from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\music\battle_music_1.mp3
+2025-03-08 10:17:04,197 [DEBUG] Successfully loaded music: battle_music_1 from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\music\battle_music_1.mp3
+2025-03-08 10:17:04,197 [DEBUG] Successfully registered music: battle_music_2 from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\music\battle_music_2.mp3
+2025-03-08 10:17:04,197 [DEBUG] Successfully loaded music: battle_music_2 from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\music\battle_music_2.mp3
+2025-03-08 10:17:04,197 [DEBUG] Successfully registered music: defeat_music_1 from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\music\defeat_music_1.mp3
+2025-03-08 10:17:04,197 [DEBUG] Successfully loaded music: defeat_music_1 from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\music\defeat_music_1.mp3
+2025-03-08 10:17:04,197 [DEBUG] Successfully registered music: defeat_music_2 from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\music\defeat_music_2.mp3
+2025-03-08 10:17:04,197 [DEBUG] Successfully loaded music: defeat_music_2 from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\music\defeat_music_2.mp3
+2025-03-08 10:17:04,198 [DEBUG] Successfully registered music: gameplay_music_1 from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\music\gameplay_music_1.mp3
+2025-03-08 10:17:04,198 [DEBUG] Successfully loaded music: gameplay_music_1 from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\music\gameplay_music_1.mp3
+2025-03-08 10:17:04,198 [DEBUG] Successfully registered music: gameplay_music_2 from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\music\gameplay_music_2.mp3
+2025-03-08 10:17:04,198 [DEBUG] Successfully loaded music: gameplay_music_2 from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\music\gameplay_music_2.mp3
+2025-03-08 10:17:04,198 [DEBUG] Successfully registered music: gameplay_music_3 from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\music\gameplay_music_3.mp3
+2025-03-08 10:17:04,198 [DEBUG] Successfully loaded music: gameplay_music_3 from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\music\gameplay_music_3.mp3
+2025-03-08 10:17:04,198 [DEBUG] Successfully registered music: gameplay_music_4 from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\music\gameplay_music_4.mp3
+2025-03-08 10:17:04,198 [DEBUG] Successfully loaded music: gameplay_music_4 from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\music\gameplay_music_4.mp3
+2025-03-08 10:17:04,198 [DEBUG] Successfully registered music: gameplay_music_5 from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\music\gameplay_music_5.mp3
+2025-03-08 10:17:04,199 [DEBUG] Successfully loaded music: gameplay_music_5 from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\music\gameplay_music_5.mp3
+2025-03-08 10:17:04,199 [DEBUG] Successfully registered music: gameplay_music_6 from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\music\gameplay_music_6.mp3
+2025-03-08 10:17:04,199 [DEBUG] Successfully loaded music: gameplay_music_6 from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\music\gameplay_music_6.mp3
+2025-03-08 10:17:04,199 [DEBUG] Successfully registered music: main_menu_music_1 from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\music\main_menu_music_1.mp3
+2025-03-08 10:17:04,199 [DEBUG] Successfully loaded music: main_menu_music_1 from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\music\main_menu_music_1.mp3
+2025-03-08 10:17:04,199 [DEBUG] Successfully registered music: main_menu_music_2 from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\music\main_menu_music_2.mp3
+2025-03-08 10:17:04,199 [DEBUG] Successfully loaded music: main_menu_music_2 from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\music\main_menu_music_2.mp3
+2025-03-08 10:17:04,199 [DEBUG] Successfully registered music: main_menu_music_3 from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\music\main_menu_music_3.mp3
+2025-03-08 10:17:04,199 [DEBUG] Successfully loaded music: main_menu_music_3 from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\music\main_menu_music_3.mp3
+2025-03-08 10:17:04,200 [DEBUG] Successfully registered music: victory_music_1 from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\music\victory_music_1.mp3
+2025-03-08 10:17:04,200 [DEBUG] Successfully loaded music: victory_music_1 from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\music\victory_music_1.mp3
+2025-03-08 10:17:04,200 [DEBUG] Successfully registered music: victory_music_2 from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\music\victory_music_2.mp3
+2025-03-08 10:17:04,200 [DEBUG] Successfully loaded music: victory_music_2 from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\music\victory_music_2.mp3
+2025-03-08 10:17:04,200 [DEBUG] Available sound effects: []
+2025-03-08 10:17:04,200 [INFO] Music playlists loaded from C:\Users\paulb\Documents\Development\Fun\civ-game1\config\music_config.json
+2025-03-08 10:17:04,200 [DEBUG] Playlist configuration loaded successfully
+2025-03-08 10:17:04,200 [DEBUG] Loaded playlists: ['background_music', 'battle_music', 'main_menu_music', 'gameplay_music', 'combat_music', 'victory_music', 'defeat_music']
+2025-03-08 10:17:04,200 [INFO] Audio assets loading completed. 112 music tracks and 0 sound effects indexed.
+2025-03-08 10:17:04,200 [INFO] Ensuring essential audio mappings...
+2025-03-08 10:17:04,201 [DEBUG] Audio mapping - Available playlists: ['background_music', 'battle_music', 'main_menu_music', 'gameplay_music', 'combat_music', 'victory_music', 'defeat_music']
+2025-03-08 10:17:04,201 [DEBUG] Audio mapping - Available music tracks: ['background_humm_of_a_(1)', 'background_humm_of_a_(2)', 'background_humm_of_a', 'battering_ram_smashi_(1)', 'battering_ram_smashi_(2)', 'battering_ram_smashi_(3)', 'battering_ram_smashi', 'battle_cry_(1)', 'battle_cry_(2)', 'battle_cry_(3)', 'battle_cry_(4)', 'battle_cry_(5)', 'battle_cry_(6)', 'battle_cry_(7)', 'battle_cry', 'birds_chirping_(1)', 'birds_chirping_(2)', 'birds_chirping_(3)', 'birds_chirping', 'bombs_exploding_(1)', 'bombs_exploding_(2)', 'bombs_exploding_(3)', 'bombs_exploding', "bosun's_whistle_(1)", "bosun's_whistle", 'cannon_firing_(1)', 'cannon_firing_(2)', 'cannon_firing_(3)', 'cannon_firing', 'chip_tune_button_cli_(1)', 'chip_tune_button_cli_(2)', 'chip_tune_button_cli_(3)', 'chip_tune_button_cli_(4)', 'chip_tune_button_cli', 'cows_mooing_(1)', 'cows_mooing_(2)', 'cows_mooing_(3)', 'cows_mooing', 'defeated_cry', 'eagle_calling_(1)', 'eagle_calling_(2)', 'eagle_calling_(3)', 'eagle_calling', 'failure_honk_(1)', 'failure_honk_(2)', 'failure_honk_(3)', 'failure_honk', 'failure_horn_(1)', 'failure_horn_(2)', 'failure_horn_(3)', 'failure_horn', 'fail_alarm_(1)', 'fail_alarm_(2)', 'fail_alarm_(3)', 'fail_alarm', 'fail_ding_(1)', 'fail_ding_(2)', 'fail_ding_(3)', 'fail_ding', 'frogs_chirping_(1)', 'frogs_chirping_(2)', 'frogs_chirping_(3)', 'frogs_chirping', 'gun_firing_(1)', 'gun_firing_(2)', 'gun_firing_(3)', 'gun_firing', 'horses_galloping', 'horses_running', 'jet_taking_off_(1)', 'jet_taking_off_(2)', 'jet_taking_off_(3)', 'jet_taking_off', 'machine_gun_firing_(1)', 'machine_gun_firing_(2)', 'machine_gun_firing', 'placing_barrel_in_a__(1)', 'placing_barrel_in_a__(2)', 'placing_barrel_in_a__(3)', 'placing_barrel_in_a_', 'ship_sail_filling_wi', 'ship_saling', 'slow_death_crys_(1)', 'slow_death_crys_(2)', 'slow_death_crys_(3)', 'slow_death_crys', 'success_ding_(1)', 'success_ding_(2)', 'success_ding_(3)', 'success_ding', 'sword_clashing_fight', 'tank_moving', 'victory_cheers', 'waves_crashing_(1)', 'waves_crashing_(2)', 'waves_crashing_(3)', 'waves_crashing', 'battle_music_1', 'battle_music_2', 'defeat_music_1', 'defeat_music_2', 'gameplay_music_1', 'gameplay_music_2', 'gameplay_music_3', 'gameplay_music_4', 'gameplay_music_5', 'gameplay_music_6', 'main_menu_music_1', 'main_menu_music_2', 'main_menu_music_3', 'victory_music_1', 'victory_music_2']
+2025-03-08 10:17:04,201 [DEBUG] Audio mapping - Available sound effects: []
+2025-03-08 10:17:04,201 [DEBUG] Audio mapping - Required music tracks: ['main_menu_music', 'gameplay_music', 'combat_music', 'victory_music', 'defeat_music']
+2025-03-08 10:17:04,201 [DEBUG] Audio mapping - Required sound effects: ['button_click', 'battle_start', 'victory_cheer', 'defeat_sound']
+2025-03-08 10:17:04,202 [DEBUG] SoundManager attributes: ['_play_current_playlist_track', '_play_next_playlist_track', '_update_all_volumes', '_update_sound_volume', 'current_playlist', 'current_track_index', 'enable_music', 'enable_sound', 'handle_event', 'load_music', 'load_playlists', 'load_sound', 'logger', 'master_volume', 'music_enabled', 'music_tracks', 'music_volume', 'pause_music', 'play_default_music', 'play_music', 'play_playlist', 'play_sound', 'playlist_playing', 'playlists', 'set_master_volume', 'set_music_volume', 'set_playlist', 'set_sound_volume', 'sound_effects', 'sound_enabled', 'sound_volume', 'stop_music', 'stop_playlist', 'unpause_music']
+2025-03-08 10:17:04,202 [DEBUG] AudioStateManager attributes: ['change_state', 'current_state', 'logger', 'play_event_sound', 'sound_manager', 'state_music_map', 'state_transition_sounds']
+2025-03-08 10:17:04,202 [WARNING] No playlist found for MAIN_MENU state. Will fall back to individual tracks.
+2025-03-08 10:17:04,202 [DEBUG] Failed to find playlist for state 'MAIN_MENU'. Searched for: ['main_menu_playlist', 'menu_playlist', 'title_playlist']
+2025-03-08 10:17:04,202 [DEBUG] Will use individual tracks instead for state 'MAIN_MENU'
+2025-03-08 10:17:04,202 [WARNING] No playlist found for GAMEPLAY state. Will fall back to individual tracks.
+2025-03-08 10:17:04,202 [DEBUG] Failed to find playlist for state 'GAMEPLAY'. Searched for: ['gameplay_playlist', 'world_playlist', 'main_gameplay_playlist']
+2025-03-08 10:17:04,202 [DEBUG] Will use individual tracks instead for state 'GAMEPLAY'
+2025-03-08 10:17:04,202 [WARNING] No playlist found for COMBAT state. Will fall back to individual tracks.
+2025-03-08 10:17:04,202 [DEBUG] Failed to find playlist for state 'COMBAT'. Searched for: ['combat_playlist', 'battle_playlist', 'war_playlist']
+2025-03-08 10:17:04,203 [DEBUG] Will use individual tracks instead for state 'COMBAT'
+2025-03-08 10:17:04,203 [WARNING] No playlist found for VICTORY state. Will fall back to individual tracks.
+2025-03-08 10:17:04,203 [DEBUG] Failed to find playlist for state 'VICTORY'. Searched for: ['victory_playlist', 'win_playlist']
+2025-03-08 10:17:04,203 [DEBUG] Will use individual tracks instead for state 'VICTORY'
+2025-03-08 10:17:04,203 [WARNING] No playlist found for DEFEAT state. Will fall back to individual tracks.
+2025-03-08 10:17:04,203 [DEBUG] Failed to find playlist for state 'DEFEAT'. Searched for: ['defeat_playlist', 'game_over_playlist']
+2025-03-08 10:17:04,203 [DEBUG] Will use individual tracks instead for state 'DEFEAT'
+2025-03-08 10:17:04,203 [WARNING] No playlist found for OPTIONS_MENU state. Will fall back to individual tracks.
+2025-03-08 10:17:04,203 [DEBUG] Failed to find playlist for state 'OPTIONS_MENU'. Searched for: ['menu_playlist', 'ui_playlist']
+2025-03-08 10:17:04,204 [DEBUG] Will use individual tracks instead for state 'OPTIONS_MENU'
+2025-03-08 10:17:04,204 [WARNING] Required music 'main_menu_music' not found. Using 'background_humm_of_a_(1)' instead.
+2025-03-08 10:17:04,204 [DEBUG] Required track 'main_menu_music' and alternates ['main_menu', 'menu', 'title'] not found.
+2025-03-08 10:17:04,204 [DEBUG] Using fallback track 'background_humm_of_a_(1)' for 'main_menu_music'
+2025-03-08 10:17:04,204 [WARNING] Required music 'gameplay_music' not found. Using 'background_humm_of_a_(1)' instead.
+2025-03-08 10:17:04,204 [DEBUG] Required track 'gameplay_music' and alternates ['gameplay', 'game', 'world'] not found.
+2025-03-08 10:17:04,204 [DEBUG] Using fallback track 'background_humm_of_a_(1)' for 'gameplay_music'
+2025-03-08 10:17:04,204 [WARNING] Required music 'combat_music' not found. Using 'background_humm_of_a_(1)' instead.
+2025-03-08 10:17:04,204 [DEBUG] Required track 'combat_music' and alternates ['combat', 'battle', 'fight'] not found.
+2025-03-08 10:17:04,204 [DEBUG] Using fallback track 'background_humm_of_a_(1)' for 'combat_music'
+2025-03-08 10:17:04,204 [WARNING] Required music 'victory_music' not found. Using 'background_humm_of_a_(1)' instead.
+2025-03-08 10:17:04,205 [DEBUG] Required track 'victory_music' and alternates ['victory', 'win'] not found.
+2025-03-08 10:17:04,205 [DEBUG] Using fallback track 'background_humm_of_a_(1)' for 'victory_music'
+2025-03-08 10:17:04,205 [WARNING] Required music 'defeat_music' not found. Using 'background_humm_of_a_(1)' instead.
+2025-03-08 10:17:04,205 [DEBUG] Required track 'defeat_music' and alternates ['defeat', 'lose', 'game_over'] not found.
+2025-03-08 10:17:04,205 [DEBUG] Using fallback track 'background_humm_of_a_(1)' for 'defeat_music'
+2025-03-08 10:17:04,205 [INFO] Audio mappings completed.
+2025-03-08 10:17:04,205 [INFO] Changing audio state from None to GameAudioState.MAIN_MENU
+2025-03-08 10:17:04,205 [DEBUG] Stopped music playback
+2025-03-08 10:17:04,205 [DEBUG] Set current playlist to: main_menu_music
+2025-03-08 10:17:04,207 [DEBUG] Playing music: main_menu_music_2
+2025-03-08 10:17:04,207 [DEBUG] Playing main_menu_music playlist for state GameAudioState.MAIN_MENU
+2025-03-08 10:17:04,207 [INFO] Game engine initialized successfully
+2025-03-08 10:17:04,208 [INFO] Game screen reference set
+2025-03-08 10:17:05,808 [INFO] Transitioning to options menu
+2025-03-08 10:17:05,810 [DEBUG] Changing audio state to OPTIONS_MENU
+2025-03-08 10:17:05,810 [INFO] Changing audio state from GameAudioState.MAIN_MENU to GameAudioState.OPTIONS_MENU
+2025-03-08 10:17:05,810 [DEBUG] Stopped music playback
+2025-03-08 10:17:05,810 [DEBUG] Set current playlist to: main_menu_music
+2025-03-08 10:17:05,812 [DEBUG] Playing music: main_menu_music_1
+2025-03-08 10:17:05,813 [DEBUG] Playing main_menu_music playlist for state GameAudioState.OPTIONS_MENU
+2025-03-08 10:17:05,813 [INFO] Transitioning to options menu
+2025-03-08 10:17:05,814 [DEBUG] Changing audio state to OPTIONS_MENU
+2025-03-08 10:19:11,563 [INFO] Logger initialized
+2025-03-08 10:19:11,564 [INFO] Configuration loaded from C:\Users\paulb\Documents\Development\Fun\civ-game1\config.ini
+2025-03-08 10:19:11,564 [INFO] Config manager initialized
+2025-03-08 10:19:11,986 [INFO] Game engine initializing...
+2025-03-08 10:19:11,986 [INFO] Audio debug logging is ENABLED
+2025-03-08 10:19:11,989 [INFO] Sound system initialized successfully
+2025-03-08 10:19:11,989 [INFO] Audio settings loaded: master=1.0, music=0.5178571428571429, sound=1.0, music_enabled=True, sound_enabled=True
+2025-03-08 10:19:11,989 [INFO] Audio state manager initialized
+2025-03-08 10:19:11,989 [INFO] Loading audio assets...
+2025-03-08 10:19:11,990 [DEBUG] Available music tracks: ['background_humm_of_a_(1)', 'background_humm_of_a_(2)', 'background_humm_of_a', 'battering_ram_smashi_(1)', 'battering_ram_smashi_(2)', 'battering_ram_smashi_(3)', 'battering_ram_smashi', 'battle_cry_(1)', 'battle_cry_(2)', 'battle_cry_(3)', 'battle_cry_(4)', 'battle_cry_(5)', 'battle_cry_(6)', 'battle_cry_(7)', 'battle_cry', 'birds_chirping_(1)', 'birds_chirping_(2)', 'birds_chirping_(3)', 'birds_chirping', 'bombs_exploding_(1)', 'bombs_exploding_(2)', 'bombs_exploding_(3)', 'bombs_exploding', "bosun's_whistle_(1)", "bosun's_whistle", 'cannon_firing_(1)', 'cannon_firing_(2)', 'cannon_firing_(3)', 'cannon_firing', 'chip_tune_button_cli_(1)', 'chip_tune_button_cli_(2)', 'chip_tune_button_cli_(3)', 'chip_tune_button_cli_(4)', 'chip_tune_button_cli', 'cows_mooing_(1)', 'cows_mooing_(2)', 'cows_mooing_(3)', 'cows_mooing', 'defeated_cry', 'eagle_calling_(1)', 'eagle_calling_(2)', 'eagle_calling_(3)', 'eagle_calling', 'failure_honk_(1)', 'failure_honk_(2)', 'failure_honk_(3)', 'failure_honk', 'failure_horn_(1)', 'failure_horn_(2)', 'failure_horn_(3)', 'failure_horn', 'fail_alarm_(1)', 'fail_alarm_(2)', 'fail_alarm_(3)', 'fail_alarm', 'fail_ding_(1)', 'fail_ding_(2)', 'fail_ding_(3)', 'fail_ding', 'frogs_chirping_(1)', 'frogs_chirping_(2)', 'frogs_chirping_(3)', 'frogs_chirping', 'gun_firing_(1)', 'gun_firing_(2)', 'gun_firing_(3)', 'gun_firing', 'horses_galloping', 'horses_running', 'jet_taking_off_(1)', 'jet_taking_off_(2)', 'jet_taking_off_(3)', 'jet_taking_off', 'machine_gun_firing_(1)', 'machine_gun_firing_(2)', 'machine_gun_firing', 'placing_barrel_in_a__(1)', 'placing_barrel_in_a__(2)', 'placing_barrel_in_a__(3)', 'placing_barrel_in_a_', 'ship_sail_filling_wi', 'ship_saling', 'slow_death_crys_(1)', 'slow_death_crys_(2)', 'slow_death_crys_(3)', 'slow_death_crys', 'success_ding_(1)', 'success_ding_(2)', 'success_ding_(3)', 'success_ding', 'sword_clashing_fight', 'tank_moving', 'victory_cheers', 'waves_crashing_(1)', 'waves_crashing_(2)', 'waves_crashing_(3)', 'waves_crashing', 'battle_music_1', 'battle_music_2', 'defeat_music_1', 'defeat_music_2', 'gameplay_music_1', 'gameplay_music_2', 'gameplay_music_3', 'gameplay_music_4', 'gameplay_music_5', 'gameplay_music_6', 'main_menu_music_1', 'main_menu_music_2', 'main_menu_music_3', 'victory_music_1', 'victory_music_2']
+2025-03-08 10:19:11,990 [DEBUG] Successfully registered music: background_humm_of_a_(1) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\background_humm_of_a (1).mp3
+2025-03-08 10:19:11,990 [DEBUG] Successfully loaded music: background_humm_of_a_(1) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\background_humm_of_a (1).mp3
+2025-03-08 10:19:11,990 [DEBUG] Successfully registered music: background_humm_of_a_(2) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\background_humm_of_a (2).mp3
+2025-03-08 10:19:11,991 [DEBUG] Successfully loaded music: background_humm_of_a_(2) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\background_humm_of_a (2).mp3
+2025-03-08 10:19:11,991 [DEBUG] Successfully registered music: background_humm_of_a from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\background_humm_of_a.mp3
+2025-03-08 10:19:11,991 [DEBUG] Successfully loaded music: background_humm_of_a from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\background_humm_of_a.mp3
+2025-03-08 10:19:11,991 [DEBUG] Successfully registered music: battering_ram_smashi_(1) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\battering_ram_smashi (1).mp3
+2025-03-08 10:19:11,991 [DEBUG] Successfully loaded music: battering_ram_smashi_(1) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\battering_ram_smashi (1).mp3
+2025-03-08 10:19:11,991 [DEBUG] Successfully registered music: battering_ram_smashi_(2) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\battering_ram_smashi (2).mp3
+2025-03-08 10:19:11,991 [DEBUG] Successfully loaded music: battering_ram_smashi_(2) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\battering_ram_smashi (2).mp3
+2025-03-08 10:19:11,992 [DEBUG] Successfully registered music: battering_ram_smashi_(3) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\battering_ram_smashi (3).mp3
+2025-03-08 10:19:11,992 [DEBUG] Successfully loaded music: battering_ram_smashi_(3) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\battering_ram_smashi (3).mp3
+2025-03-08 10:19:11,992 [DEBUG] Successfully registered music: battering_ram_smashi from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\battering_ram_smashi.mp3
+2025-03-08 10:19:11,992 [DEBUG] Successfully loaded music: battering_ram_smashi from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\battering_ram_smashi.mp3
+2025-03-08 10:19:11,992 [DEBUG] Successfully registered music: battle_cry_(1) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\battle_cry (1).mp3
+2025-03-08 10:19:11,992 [DEBUG] Successfully loaded music: battle_cry_(1) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\battle_cry (1).mp3
+2025-03-08 10:19:11,992 [DEBUG] Successfully registered music: battle_cry_(2) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\battle_cry (2).mp3
+2025-03-08 10:19:11,993 [DEBUG] Successfully loaded music: battle_cry_(2) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\battle_cry (2).mp3
+2025-03-08 10:19:11,993 [DEBUG] Successfully registered music: battle_cry_(3) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\battle_cry (3).mp3
+2025-03-08 10:19:11,993 [DEBUG] Successfully loaded music: battle_cry_(3) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\battle_cry (3).mp3
+2025-03-08 10:19:11,993 [DEBUG] Successfully registered music: battle_cry_(4) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\battle_cry (4).mp3
+2025-03-08 10:19:11,993 [DEBUG] Successfully loaded music: battle_cry_(4) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\battle_cry (4).mp3
+2025-03-08 10:19:11,993 [DEBUG] Successfully registered music: battle_cry_(5) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\battle_cry (5).mp3
+2025-03-08 10:19:11,993 [DEBUG] Successfully loaded music: battle_cry_(5) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\battle_cry (5).mp3
+2025-03-08 10:19:11,993 [DEBUG] Successfully registered music: battle_cry_(6) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\battle_cry (6).mp3
+2025-03-08 10:19:11,994 [DEBUG] Successfully loaded music: battle_cry_(6) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\battle_cry (6).mp3
+2025-03-08 10:19:11,994 [DEBUG] Successfully registered music: battle_cry_(7) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\battle_cry (7).mp3
+2025-03-08 10:19:11,994 [DEBUG] Successfully loaded music: battle_cry_(7) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\battle_cry (7).mp3
+2025-03-08 10:19:11,994 [DEBUG] Successfully registered music: battle_cry from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\battle_cry.mp3
+2025-03-08 10:19:11,994 [DEBUG] Successfully loaded music: battle_cry from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\battle_cry.mp3
+2025-03-08 10:19:11,994 [DEBUG] Successfully registered music: birds_chirping_(1) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\birds_chirping (1).mp3
+2025-03-08 10:19:11,994 [DEBUG] Successfully loaded music: birds_chirping_(1) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\birds_chirping (1).mp3
+2025-03-08 10:19:11,994 [DEBUG] Successfully registered music: birds_chirping_(2) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\birds_chirping (2).mp3
+2025-03-08 10:19:11,995 [DEBUG] Successfully loaded music: birds_chirping_(2) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\birds_chirping (2).mp3
+2025-03-08 10:19:11,995 [DEBUG] Successfully registered music: birds_chirping_(3) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\birds_chirping (3).mp3
+2025-03-08 10:19:11,995 [DEBUG] Successfully loaded music: birds_chirping_(3) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\birds_chirping (3).mp3
+2025-03-08 10:19:11,995 [DEBUG] Successfully registered music: birds_chirping from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\birds_chirping.mp3
+2025-03-08 10:19:11,995 [DEBUG] Successfully loaded music: birds_chirping from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\birds_chirping.mp3
+2025-03-08 10:19:11,996 [DEBUG] Successfully registered music: bombs_exploding_(1) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\bombs_exploding (1).mp3
+2025-03-08 10:19:11,996 [DEBUG] Successfully loaded music: bombs_exploding_(1) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\bombs_exploding (1).mp3
+2025-03-08 10:19:11,996 [DEBUG] Successfully registered music: bombs_exploding_(2) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\bombs_exploding (2).mp3
+2025-03-08 10:19:11,996 [DEBUG] Successfully loaded music: bombs_exploding_(2) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\bombs_exploding (2).mp3
+2025-03-08 10:19:11,996 [DEBUG] Successfully registered music: bombs_exploding_(3) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\bombs_exploding (3).mp3
+2025-03-08 10:19:11,996 [DEBUG] Successfully loaded music: bombs_exploding_(3) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\bombs_exploding (3).mp3
+2025-03-08 10:19:11,996 [DEBUG] Successfully registered music: bombs_exploding from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\bombs_exploding.mp3
+2025-03-08 10:19:11,996 [DEBUG] Successfully loaded music: bombs_exploding from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\bombs_exploding.mp3
+2025-03-08 10:19:11,997 [DEBUG] Successfully registered music: bosun's_whistle_(1) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\bosun's_whistle (1).mp3
+2025-03-08 10:19:11,997 [DEBUG] Successfully loaded music: bosun's_whistle_(1) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\bosun's_whistle (1).mp3
+2025-03-08 10:19:11,997 [DEBUG] Successfully registered music: bosun's_whistle from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\bosun's_whistle.mp3
+2025-03-08 10:19:11,997 [DEBUG] Successfully loaded music: bosun's_whistle from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\bosun's_whistle.mp3
+2025-03-08 10:19:11,997 [DEBUG] Successfully registered music: cannon_firing_(1) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\cannon_firing (1).mp3
+2025-03-08 10:19:11,997 [DEBUG] Successfully loaded music: cannon_firing_(1) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\cannon_firing (1).mp3
+2025-03-08 10:19:11,997 [DEBUG] Successfully registered music: cannon_firing_(2) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\cannon_firing (2).mp3
+2025-03-08 10:19:11,997 [DEBUG] Successfully loaded music: cannon_firing_(2) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\cannon_firing (2).mp3
+2025-03-08 10:19:11,998 [DEBUG] Successfully registered music: cannon_firing_(3) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\cannon_firing (3).mp3
+2025-03-08 10:19:11,998 [DEBUG] Successfully loaded music: cannon_firing_(3) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\cannon_firing (3).mp3
+2025-03-08 10:19:11,998 [DEBUG] Successfully registered music: cannon_firing from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\cannon_firing.mp3
+2025-03-08 10:19:11,998 [DEBUG] Successfully loaded music: cannon_firing from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\cannon_firing.mp3
+2025-03-08 10:19:11,998 [DEBUG] Successfully registered music: chip_tune_button_cli_(1) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\chip_tune_button_cli (1).mp3
+2025-03-08 10:19:11,998 [DEBUG] Successfully loaded music: chip_tune_button_cli_(1) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\chip_tune_button_cli (1).mp3
+2025-03-08 10:19:11,998 [DEBUG] Successfully registered music: chip_tune_button_cli_(2) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\chip_tune_button_cli (2).mp3
+2025-03-08 10:19:11,998 [DEBUG] Successfully loaded music: chip_tune_button_cli_(2) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\chip_tune_button_cli (2).mp3
+2025-03-08 10:19:11,998 [DEBUG] Successfully registered music: chip_tune_button_cli_(3) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\chip_tune_button_cli (3).mp3
+2025-03-08 10:19:11,998 [DEBUG] Successfully loaded music: chip_tune_button_cli_(3) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\chip_tune_button_cli (3).mp3
+2025-03-08 10:19:11,998 [DEBUG] Successfully registered music: chip_tune_button_cli_(4) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\chip_tune_button_cli (4).mp3
+2025-03-08 10:19:11,998 [DEBUG] Successfully loaded music: chip_tune_button_cli_(4) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\chip_tune_button_cli (4).mp3
+2025-03-08 10:19:11,999 [DEBUG] Successfully registered music: chip_tune_button_cli from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\chip_tune_button_cli.mp3
+2025-03-08 10:19:11,999 [DEBUG] Successfully loaded music: chip_tune_button_cli from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\chip_tune_button_cli.mp3
+2025-03-08 10:19:11,999 [DEBUG] Successfully registered music: cows_mooing_(1) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\cows_mooing (1).mp3
+2025-03-08 10:19:11,999 [DEBUG] Successfully loaded music: cows_mooing_(1) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\cows_mooing (1).mp3
+2025-03-08 10:19:11,999 [DEBUG] Successfully registered music: cows_mooing_(2) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\cows_mooing (2).mp3
+2025-03-08 10:19:11,999 [DEBUG] Successfully loaded music: cows_mooing_(2) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\cows_mooing (2).mp3
+2025-03-08 10:19:12,000 [DEBUG] Successfully registered music: cows_mooing_(3) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\cows_mooing (3).mp3
+2025-03-08 10:19:12,000 [DEBUG] Successfully loaded music: cows_mooing_(3) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\cows_mooing (3).mp3
+2025-03-08 10:19:12,000 [DEBUG] Successfully registered music: cows_mooing from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\cows_mooing.mp3
+2025-03-08 10:19:12,000 [DEBUG] Successfully loaded music: cows_mooing from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\cows_mooing.mp3
+2025-03-08 10:19:12,000 [DEBUG] Successfully registered music: defeated_cry from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\defeated_cry.mp3
+2025-03-08 10:19:12,000 [DEBUG] Successfully loaded music: defeated_cry from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\defeated_cry.mp3
+2025-03-08 10:19:12,001 [DEBUG] Successfully registered music: eagle_calling_(1) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\eagle_calling (1).mp3
+2025-03-08 10:19:12,001 [DEBUG] Successfully loaded music: eagle_calling_(1) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\eagle_calling (1).mp3
+2025-03-08 10:19:12,001 [DEBUG] Successfully registered music: eagle_calling_(2) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\eagle_calling (2).mp3
+2025-03-08 10:19:12,001 [DEBUG] Successfully loaded music: eagle_calling_(2) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\eagle_calling (2).mp3
+2025-03-08 10:19:12,001 [DEBUG] Successfully registered music: eagle_calling_(3) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\eagle_calling (3).mp3
+2025-03-08 10:19:12,001 [DEBUG] Successfully loaded music: eagle_calling_(3) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\eagle_calling (3).mp3
+2025-03-08 10:19:12,002 [DEBUG] Successfully registered music: eagle_calling from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\eagle_calling.mp3
+2025-03-08 10:19:12,002 [DEBUG] Successfully loaded music: eagle_calling from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\eagle_calling.mp3
+2025-03-08 10:19:12,002 [DEBUG] Successfully registered music: failure_honk_(1) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\failure_honk (1).mp3
+2025-03-08 10:19:12,002 [DEBUG] Successfully loaded music: failure_honk_(1) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\failure_honk (1).mp3
+2025-03-08 10:19:12,002 [DEBUG] Successfully registered music: failure_honk_(2) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\failure_honk (2).mp3
+2025-03-08 10:19:12,002 [DEBUG] Successfully loaded music: failure_honk_(2) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\failure_honk (2).mp3
+2025-03-08 10:19:12,002 [DEBUG] Successfully registered music: failure_honk_(3) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\failure_honk (3).mp3
+2025-03-08 10:19:12,002 [DEBUG] Successfully loaded music: failure_honk_(3) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\failure_honk (3).mp3
+2025-03-08 10:19:12,002 [DEBUG] Successfully registered music: failure_honk from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\failure_honk.mp3
+2025-03-08 10:19:12,003 [DEBUG] Successfully loaded music: failure_honk from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\failure_honk.mp3
+2025-03-08 10:19:12,003 [DEBUG] Successfully registered music: failure_horn_(1) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\failure_horn (1).mp3
+2025-03-08 10:19:12,003 [DEBUG] Successfully loaded music: failure_horn_(1) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\failure_horn (1).mp3
+2025-03-08 10:19:12,003 [DEBUG] Successfully registered music: failure_horn_(2) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\failure_horn (2).mp3
+2025-03-08 10:19:12,003 [DEBUG] Successfully loaded music: failure_horn_(2) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\failure_horn (2).mp3
+2025-03-08 10:19:12,003 [DEBUG] Successfully registered music: failure_horn_(3) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\failure_horn (3).mp3
+2025-03-08 10:19:12,003 [DEBUG] Successfully loaded music: failure_horn_(3) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\failure_horn (3).mp3
+2025-03-08 10:19:12,004 [DEBUG] Successfully registered music: failure_horn from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\failure_horn.mp3
+2025-03-08 10:19:12,004 [DEBUG] Successfully loaded music: failure_horn from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\failure_horn.mp3
+2025-03-08 10:19:12,004 [DEBUG] Successfully registered music: fail_alarm_(1) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\fail_alarm (1).mp3
+2025-03-08 10:19:12,004 [DEBUG] Successfully loaded music: fail_alarm_(1) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\fail_alarm (1).mp3
+2025-03-08 10:19:12,004 [DEBUG] Successfully registered music: fail_alarm_(2) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\fail_alarm (2).mp3
+2025-03-08 10:19:12,004 [DEBUG] Successfully loaded music: fail_alarm_(2) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\fail_alarm (2).mp3
+2025-03-08 10:19:12,004 [DEBUG] Successfully registered music: fail_alarm_(3) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\fail_alarm (3).mp3
+2025-03-08 10:19:12,005 [DEBUG] Successfully loaded music: fail_alarm_(3) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\fail_alarm (3).mp3
+2025-03-08 10:19:12,005 [DEBUG] Successfully registered music: fail_alarm from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\fail_alarm.mp3
+2025-03-08 10:19:12,005 [DEBUG] Successfully loaded music: fail_alarm from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\fail_alarm.mp3
+2025-03-08 10:19:12,005 [DEBUG] Successfully registered music: fail_ding_(1) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\fail_ding (1).mp3
+2025-03-08 10:19:12,005 [DEBUG] Successfully loaded music: fail_ding_(1) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\fail_ding (1).mp3
+2025-03-08 10:19:12,005 [DEBUG] Successfully registered music: fail_ding_(2) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\fail_ding (2).mp3
+2025-03-08 10:19:12,005 [DEBUG] Successfully loaded music: fail_ding_(2) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\fail_ding (2).mp3
+2025-03-08 10:19:12,006 [DEBUG] Successfully registered music: fail_ding_(3) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\fail_ding (3).mp3
+2025-03-08 10:19:12,006 [DEBUG] Successfully loaded music: fail_ding_(3) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\fail_ding (3).mp3
+2025-03-08 10:19:12,006 [DEBUG] Successfully registered music: fail_ding from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\fail_ding.mp3
+2025-03-08 10:19:12,006 [DEBUG] Successfully loaded music: fail_ding from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\fail_ding.mp3
+2025-03-08 10:19:12,006 [DEBUG] Successfully registered music: frogs_chirping_(1) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\frogs_chirping (1).mp3
+2025-03-08 10:19:12,006 [DEBUG] Successfully loaded music: frogs_chirping_(1) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\frogs_chirping (1).mp3
+2025-03-08 10:19:12,006 [DEBUG] Successfully registered music: frogs_chirping_(2) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\frogs_chirping (2).mp3
+2025-03-08 10:19:12,006 [DEBUG] Successfully loaded music: frogs_chirping_(2) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\frogs_chirping (2).mp3
+2025-03-08 10:19:12,006 [DEBUG] Successfully registered music: frogs_chirping_(3) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\frogs_chirping (3).mp3
+2025-03-08 10:19:12,006 [DEBUG] Successfully loaded music: frogs_chirping_(3) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\frogs_chirping (3).mp3
+2025-03-08 10:19:12,006 [DEBUG] Successfully registered music: frogs_chirping from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\frogs_chirping.mp3
+2025-03-08 10:19:12,006 [DEBUG] Successfully loaded music: frogs_chirping from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\frogs_chirping.mp3
+2025-03-08 10:19:12,006 [DEBUG] Successfully registered music: gun_firing_(1) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\gun_firing (1).mp3
+2025-03-08 10:19:12,006 [DEBUG] Successfully loaded music: gun_firing_(1) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\gun_firing (1).mp3
+2025-03-08 10:19:12,008 [DEBUG] Successfully registered music: gun_firing_(2) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\gun_firing (2).mp3
+2025-03-08 10:19:12,008 [DEBUG] Successfully loaded music: gun_firing_(2) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\gun_firing (2).mp3
+2025-03-08 10:19:12,008 [DEBUG] Successfully registered music: gun_firing_(3) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\gun_firing (3).mp3
+2025-03-08 10:19:12,008 [DEBUG] Successfully loaded music: gun_firing_(3) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\gun_firing (3).mp3
+2025-03-08 10:19:12,008 [DEBUG] Successfully registered music: gun_firing from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\gun_firing.mp3
+2025-03-08 10:19:12,008 [DEBUG] Successfully loaded music: gun_firing from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\gun_firing.mp3
+2025-03-08 10:19:12,008 [DEBUG] Successfully registered music: horses_galloping from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\horses_galloping.mp3
+2025-03-08 10:19:12,008 [DEBUG] Successfully loaded music: horses_galloping from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\horses_galloping.mp3
+2025-03-08 10:19:12,008 [DEBUG] Successfully registered music: horses_running from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\horses_running.mp3
+2025-03-08 10:19:12,008 [DEBUG] Successfully loaded music: horses_running from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\horses_running.mp3
+2025-03-08 10:19:12,009 [DEBUG] Successfully registered music: jet_taking_off_(1) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\jet_taking_off (1).mp3
+2025-03-08 10:19:12,009 [DEBUG] Successfully loaded music: jet_taking_off_(1) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\jet_taking_off (1).mp3
+2025-03-08 10:19:12,009 [DEBUG] Successfully registered music: jet_taking_off_(2) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\jet_taking_off (2).mp3
+2025-03-08 10:19:12,009 [DEBUG] Successfully loaded music: jet_taking_off_(2) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\jet_taking_off (2).mp3
+2025-03-08 10:19:12,009 [DEBUG] Successfully registered music: jet_taking_off_(3) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\jet_taking_off (3).mp3
+2025-03-08 10:19:12,009 [DEBUG] Successfully loaded music: jet_taking_off_(3) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\jet_taking_off (3).mp3
+2025-03-08 10:19:12,009 [DEBUG] Successfully registered music: jet_taking_off from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\jet_taking_off.mp3
+2025-03-08 10:19:12,009 [DEBUG] Successfully loaded music: jet_taking_off from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\jet_taking_off.mp3
+2025-03-08 10:19:12,009 [DEBUG] Successfully registered music: machine_gun_firing_(1) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\machine_gun_firing (1).mp3
+2025-03-08 10:19:12,009 [DEBUG] Successfully loaded music: machine_gun_firing_(1) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\machine_gun_firing (1).mp3
+2025-03-08 10:19:12,010 [DEBUG] Successfully registered music: machine_gun_firing_(2) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\machine_gun_firing (2).mp3
+2025-03-08 10:19:12,010 [DEBUG] Successfully loaded music: machine_gun_firing_(2) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\machine_gun_firing (2).mp3
+2025-03-08 10:19:12,010 [DEBUG] Successfully registered music: machine_gun_firing from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\machine_gun_firing.mp3
+2025-03-08 10:19:12,010 [DEBUG] Successfully loaded music: machine_gun_firing from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\machine_gun_firing.mp3
+2025-03-08 10:19:12,010 [DEBUG] Successfully registered music: placing_barrel_in_a__(1) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\placing_barrel_in_a_ (1).mp3
+2025-03-08 10:19:12,010 [DEBUG] Successfully loaded music: placing_barrel_in_a__(1) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\placing_barrel_in_a_ (1).mp3
+2025-03-08 10:19:12,010 [DEBUG] Successfully registered music: placing_barrel_in_a__(2) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\placing_barrel_in_a_ (2).mp3
+2025-03-08 10:19:12,010 [DEBUG] Successfully loaded music: placing_barrel_in_a__(2) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\placing_barrel_in_a_ (2).mp3
+2025-03-08 10:19:12,010 [DEBUG] Successfully registered music: placing_barrel_in_a__(3) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\placing_barrel_in_a_ (3).mp3
+2025-03-08 10:19:12,010 [DEBUG] Successfully loaded music: placing_barrel_in_a__(3) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\placing_barrel_in_a_ (3).mp3
+2025-03-08 10:19:12,011 [DEBUG] Successfully registered music: placing_barrel_in_a_ from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\placing_barrel_in_a_.mp3
+2025-03-08 10:19:12,011 [DEBUG] Successfully loaded music: placing_barrel_in_a_ from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\placing_barrel_in_a_.mp3
+2025-03-08 10:19:12,011 [DEBUG] Successfully registered music: ship_sail_filling_wi from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\ship_sail_filling_wi.mp3
+2025-03-08 10:19:12,011 [DEBUG] Successfully loaded music: ship_sail_filling_wi from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\ship_sail_filling_wi.mp3
+2025-03-08 10:19:12,011 [DEBUG] Successfully registered music: ship_saling from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\ship_saling.mp3
+2025-03-08 10:19:12,011 [DEBUG] Successfully loaded music: ship_saling from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\ship_saling.mp3
+2025-03-08 10:19:12,011 [DEBUG] Successfully registered music: slow_death_crys_(1) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\slow_death_crys (1).mp3
+2025-03-08 10:19:12,012 [DEBUG] Successfully loaded music: slow_death_crys_(1) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\slow_death_crys (1).mp3
+2025-03-08 10:19:12,012 [DEBUG] Successfully registered music: slow_death_crys_(2) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\slow_death_crys (2).mp3
+2025-03-08 10:19:12,012 [DEBUG] Successfully loaded music: slow_death_crys_(2) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\slow_death_crys (2).mp3
+2025-03-08 10:19:12,012 [DEBUG] Successfully registered music: slow_death_crys_(3) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\slow_death_crys (3).mp3
+2025-03-08 10:19:12,012 [DEBUG] Successfully loaded music: slow_death_crys_(3) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\slow_death_crys (3).mp3
+2025-03-08 10:19:12,012 [DEBUG] Successfully registered music: slow_death_crys from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\slow_death_crys.mp3
+2025-03-08 10:19:12,012 [DEBUG] Successfully loaded music: slow_death_crys from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\slow_death_crys.mp3
+2025-03-08 10:19:12,012 [DEBUG] Successfully registered music: success_ding_(1) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\success_ding (1).mp3
+2025-03-08 10:19:12,012 [DEBUG] Successfully loaded music: success_ding_(1) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\success_ding (1).mp3
+2025-03-08 10:19:12,012 [DEBUG] Successfully registered music: success_ding_(2) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\success_ding (2).mp3
+2025-03-08 10:19:12,012 [DEBUG] Successfully loaded music: success_ding_(2) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\success_ding (2).mp3
+2025-03-08 10:19:12,013 [DEBUG] Successfully registered music: success_ding_(3) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\success_ding (3).mp3
+2025-03-08 10:19:12,013 [DEBUG] Successfully loaded music: success_ding_(3) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\success_ding (3).mp3
+2025-03-08 10:19:12,013 [DEBUG] Successfully registered music: success_ding from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\success_ding.mp3
+2025-03-08 10:19:12,013 [DEBUG] Successfully loaded music: success_ding from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\success_ding.mp3
+2025-03-08 10:19:12,013 [DEBUG] Successfully registered music: sword_clashing_fight from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\sword_clashing_fight.mp3
+2025-03-08 10:19:12,013 [DEBUG] Successfully loaded music: sword_clashing_fight from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\sword_clashing_fight.mp3
+2025-03-08 10:19:12,013 [DEBUG] Successfully registered music: tank_moving from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\tank_moving.mp3
+2025-03-08 10:19:12,013 [DEBUG] Successfully loaded music: tank_moving from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\tank_moving.mp3
+2025-03-08 10:19:12,013 [DEBUG] Successfully registered music: victory_cheers from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\victory_cheers.mp3
+2025-03-08 10:19:12,013 [DEBUG] Successfully loaded music: victory_cheers from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\victory_cheers.mp3
+2025-03-08 10:19:12,013 [DEBUG] Successfully registered music: waves_crashing_(1) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\waves_crashing (1).mp3
+2025-03-08 10:19:12,014 [DEBUG] Successfully loaded music: waves_crashing_(1) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\waves_crashing (1).mp3
+2025-03-08 10:19:12,014 [DEBUG] Successfully registered music: waves_crashing_(2) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\waves_crashing (2).mp3
+2025-03-08 10:19:12,014 [DEBUG] Successfully loaded music: waves_crashing_(2) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\waves_crashing (2).mp3
+2025-03-08 10:19:12,014 [DEBUG] Successfully registered music: waves_crashing_(3) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\waves_crashing (3).mp3
+2025-03-08 10:19:12,014 [DEBUG] Successfully loaded music: waves_crashing_(3) from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\waves_crashing (3).mp3
+2025-03-08 10:19:12,014 [DEBUG] Successfully registered music: waves_crashing from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\waves_crashing.mp3
+2025-03-08 10:19:12,014 [DEBUG] Successfully loaded music: waves_crashing from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\sounds\waves_crashing.mp3
+2025-03-08 10:19:12,014 [DEBUG] Successfully registered music: battle_music_1 from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\music\battle_music_1.mp3
+2025-03-08 10:19:12,014 [DEBUG] Successfully loaded music: battle_music_1 from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\music\battle_music_1.mp3
+2025-03-08 10:19:12,014 [DEBUG] Successfully registered music: battle_music_2 from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\music\battle_music_2.mp3
+2025-03-08 10:19:12,014 [DEBUG] Successfully loaded music: battle_music_2 from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\music\battle_music_2.mp3
+2025-03-08 10:19:12,015 [DEBUG] Successfully registered music: defeat_music_1 from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\music\defeat_music_1.mp3
+2025-03-08 10:19:12,015 [DEBUG] Successfully loaded music: defeat_music_1 from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\music\defeat_music_1.mp3
+2025-03-08 10:19:12,015 [DEBUG] Successfully registered music: defeat_music_2 from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\music\defeat_music_2.mp3
+2025-03-08 10:19:12,015 [DEBUG] Successfully loaded music: defeat_music_2 from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\music\defeat_music_2.mp3
+2025-03-08 10:19:12,015 [DEBUG] Successfully registered music: gameplay_music_1 from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\music\gameplay_music_1.mp3
+2025-03-08 10:19:12,015 [DEBUG] Successfully loaded music: gameplay_music_1 from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\music\gameplay_music_1.mp3
+2025-03-08 10:19:12,015 [DEBUG] Successfully registered music: gameplay_music_2 from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\music\gameplay_music_2.mp3
+2025-03-08 10:19:12,015 [DEBUG] Successfully loaded music: gameplay_music_2 from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\music\gameplay_music_2.mp3
+2025-03-08 10:19:12,016 [DEBUG] Successfully registered music: gameplay_music_3 from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\music\gameplay_music_3.mp3
+2025-03-08 10:19:12,016 [DEBUG] Successfully loaded music: gameplay_music_3 from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\music\gameplay_music_3.mp3
+2025-03-08 10:19:12,016 [DEBUG] Successfully registered music: gameplay_music_4 from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\music\gameplay_music_4.mp3
+2025-03-08 10:19:12,016 [DEBUG] Successfully loaded music: gameplay_music_4 from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\music\gameplay_music_4.mp3
+2025-03-08 10:19:12,016 [DEBUG] Successfully registered music: gameplay_music_5 from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\music\gameplay_music_5.mp3
+2025-03-08 10:19:12,016 [DEBUG] Successfully loaded music: gameplay_music_5 from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\music\gameplay_music_5.mp3
+2025-03-08 10:19:12,017 [DEBUG] Successfully registered music: gameplay_music_6 from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\music\gameplay_music_6.mp3
+2025-03-08 10:19:12,017 [DEBUG] Successfully loaded music: gameplay_music_6 from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\music\gameplay_music_6.mp3
+2025-03-08 10:19:12,017 [DEBUG] Successfully registered music: main_menu_music_1 from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\music\main_menu_music_1.mp3
+2025-03-08 10:19:12,017 [DEBUG] Successfully loaded music: main_menu_music_1 from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\music\main_menu_music_1.mp3
+2025-03-08 10:19:12,017 [DEBUG] Successfully registered music: main_menu_music_2 from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\music\main_menu_music_2.mp3
+2025-03-08 10:19:12,017 [DEBUG] Successfully loaded music: main_menu_music_2 from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\music\main_menu_music_2.mp3
+2025-03-08 10:19:12,017 [DEBUG] Successfully registered music: main_menu_music_3 from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\music\main_menu_music_3.mp3
+2025-03-08 10:19:12,017 [DEBUG] Successfully loaded music: main_menu_music_3 from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\music\main_menu_music_3.mp3
+2025-03-08 10:19:12,017 [DEBUG] Successfully registered music: victory_music_1 from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\music\victory_music_1.mp3
+2025-03-08 10:19:12,018 [DEBUG] Successfully loaded music: victory_music_1 from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\music\victory_music_1.mp3
+2025-03-08 10:19:12,018 [DEBUG] Successfully registered music: victory_music_2 from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\music\victory_music_2.mp3
+2025-03-08 10:19:12,018 [DEBUG] Successfully loaded music: victory_music_2 from C:\Users\paulb\Documents\Development\Fun\civ-game1\assets\music\victory_music_2.mp3
+2025-03-08 10:19:12,018 [DEBUG] Available sound effects: []
+2025-03-08 10:19:12,018 [INFO] Music playlists loaded from C:\Users\paulb\Documents\Development\Fun\civ-game1\config\music_config.json
+2025-03-08 10:19:12,018 [DEBUG] Playlist configuration loaded successfully
+2025-03-08 10:19:12,018 [DEBUG] Loaded playlists: ['background_music', 'battle_music', 'main_menu_music', 'gameplay_music', 'combat_music', 'victory_music', 'defeat_music']
+2025-03-08 10:19:12,018 [INFO] Audio assets loading completed. 112 music tracks and 0 sound effects indexed.
+2025-03-08 10:19:12,018 [INFO] Ensuring essential audio mappings...
+2025-03-08 10:19:12,018 [DEBUG] Audio mapping - Available playlists: ['background_music', 'battle_music', 'main_menu_music', 'gameplay_music', 'combat_music', 'victory_music', 'defeat_music']
+2025-03-08 10:19:12,019 [DEBUG] Audio mapping - Available music tracks: ['background_humm_of_a_(1)', 'background_humm_of_a_(2)', 'background_humm_of_a', 'battering_ram_smashi_(1)', 'battering_ram_smashi_(2)', 'battering_ram_smashi_(3)', 'battering_ram_smashi', 'battle_cry_(1)', 'battle_cry_(2)', 'battle_cry_(3)', 'battle_cry_(4)', 'battle_cry_(5)', 'battle_cry_(6)', 'battle_cry_(7)', 'battle_cry', 'birds_chirping_(1)', 'birds_chirping_(2)', 'birds_chirping_(3)', 'birds_chirping', 'bombs_exploding_(1)', 'bombs_exploding_(2)', 'bombs_exploding_(3)', 'bombs_exploding', "bosun's_whistle_(1)", "bosun's_whistle", 'cannon_firing_(1)', 'cannon_firing_(2)', 'cannon_firing_(3)', 'cannon_firing', 'chip_tune_button_cli_(1)', 'chip_tune_button_cli_(2)', 'chip_tune_button_cli_(3)', 'chip_tune_button_cli_(4)', 'chip_tune_button_cli', 'cows_mooing_(1)', 'cows_mooing_(2)', 'cows_mooing_(3)', 'cows_mooing', 'defeated_cry', 'eagle_calling_(1)', 'eagle_calling_(2)', 'eagle_calling_(3)', 'eagle_calling', 'failure_honk_(1)', 'failure_honk_(2)', 'failure_honk_(3)', 'failure_honk', 'failure_horn_(1)', 'failure_horn_(2)', 'failure_horn_(3)', 'failure_horn', 'fail_alarm_(1)', 'fail_alarm_(2)', 'fail_alarm_(3)', 'fail_alarm', 'fail_ding_(1)', 'fail_ding_(2)', 'fail_ding_(3)', 'fail_ding', 'frogs_chirping_(1)', 'frogs_chirping_(2)', 'frogs_chirping_(3)', 'frogs_chirping', 'gun_firing_(1)', 'gun_firing_(2)', 'gun_firing_(3)', 'gun_firing', 'horses_galloping', 'horses_running', 'jet_taking_off_(1)', 'jet_taking_off_(2)', 'jet_taking_off_(3)', 'jet_taking_off', 'machine_gun_firing_(1)', 'machine_gun_firing_(2)', 'machine_gun_firing', 'placing_barrel_in_a__(1)', 'placing_barrel_in_a__(2)', 'placing_barrel_in_a__(3)', 'placing_barrel_in_a_', 'ship_sail_filling_wi', 'ship_saling', 'slow_death_crys_(1)', 'slow_death_crys_(2)', 'slow_death_crys_(3)', 'slow_death_crys', 'success_ding_(1)', 'success_ding_(2)', 'success_ding_(3)', 'success_ding', 'sword_clashing_fight', 'tank_moving', 'victory_cheers', 'waves_crashing_(1)', 'waves_crashing_(2)', 'waves_crashing_(3)', 'waves_crashing', 'battle_music_1', 'battle_music_2', 'defeat_music_1', 'defeat_music_2', 'gameplay_music_1', 'gameplay_music_2', 'gameplay_music_3', 'gameplay_music_4', 'gameplay_music_5', 'gameplay_music_6', 'main_menu_music_1', 'main_menu_music_2', 'main_menu_music_3', 'victory_music_1', 'victory_music_2']
+2025-03-08 10:19:12,019 [DEBUG] Audio mapping - Available sound effects: []
+2025-03-08 10:19:12,019 [DEBUG] Audio mapping - Required music tracks: ['main_menu_music', 'gameplay_music', 'combat_music', 'victory_music', 'defeat_music']
+2025-03-08 10:19:12,019 [DEBUG] Audio mapping - Required sound effects: ['button_click', 'battle_start', 'victory_cheer', 'defeat_sound']
+2025-03-08 10:19:12,020 [DEBUG] SoundManager attributes: ['_play_current_playlist_track', '_play_next_playlist_track', '_update_all_volumes', '_update_sound_volume', 'current_playlist', 'current_track_index', 'enable_music', 'enable_sound', 'handle_event', 'load_music', 'load_playlists', 'load_sound', 'logger', 'master_volume', 'music_enabled', 'music_tracks', 'music_volume', 'pause_music', 'play_default_music', 'play_music', 'play_playlist', 'play_sound', 'playlist_playing', 'playlists', 'set_master_volume', 'set_music_volume', 'set_playlist', 'set_sound_volume', 'sound_effects', 'sound_enabled', 'sound_volume', 'stop_music', 'stop_playlist', 'unpause_music']
+2025-03-08 10:19:12,020 [DEBUG] AudioStateManager attributes: ['change_state', 'current_state', 'logger', 'play_event_sound', 'sound_manager', 'state_music_map', 'state_transition_sounds']
+2025-03-08 10:19:12,020 [WARNING] No playlist found for MAIN_MENU state. Will fall back to individual tracks.
+2025-03-08 10:19:12,020 [DEBUG] Failed to find playlist for state 'MAIN_MENU'. Searched for: ['main_menu_playlist', 'menu_playlist', 'title_playlist']
+2025-03-08 10:19:12,020 [DEBUG] Will use individual tracks instead for state 'MAIN_MENU'
+2025-03-08 10:19:12,020 [WARNING] No playlist found for GAMEPLAY state. Will fall back to individual tracks.
+2025-03-08 10:19:12,020 [DEBUG] Failed to find playlist for state 'GAMEPLAY'. Searched for: ['gameplay_playlist', 'world_playlist', 'main_gameplay_playlist']
+2025-03-08 10:19:12,020 [DEBUG] Will use individual tracks instead for state 'GAMEPLAY'
+2025-03-08 10:19:12,020 [WARNING] No playlist found for COMBAT state. Will fall back to individual tracks.
+2025-03-08 10:19:12,021 [DEBUG] Failed to find playlist for state 'COMBAT'. Searched for: ['combat_playlist', 'battle_playlist', 'war_playlist']
+2025-03-08 10:19:12,021 [DEBUG] Will use individual tracks instead for state 'COMBAT'
+2025-03-08 10:19:12,021 [WARNING] No playlist found for VICTORY state. Will fall back to individual tracks.
+2025-03-08 10:19:12,021 [DEBUG] Failed to find playlist for state 'VICTORY'. Searched for: ['victory_playlist', 'win_playlist']
+2025-03-08 10:19:12,021 [DEBUG] Will use individual tracks instead for state 'VICTORY'
+2025-03-08 10:19:12,021 [WARNING] No playlist found for DEFEAT state. Will fall back to individual tracks.
+2025-03-08 10:19:12,021 [DEBUG] Failed to find playlist for state 'DEFEAT'. Searched for: ['defeat_playlist', 'game_over_playlist']
+2025-03-08 10:19:12,021 [DEBUG] Will use individual tracks instead for state 'DEFEAT'
+2025-03-08 10:19:12,021 [WARNING] No playlist found for OPTIONS_MENU state. Will fall back to individual tracks.
+2025-03-08 10:19:12,021 [DEBUG] Failed to find playlist for state 'OPTIONS_MENU'. Searched for: ['menu_playlist', 'ui_playlist']
+2025-03-08 10:19:12,021 [DEBUG] Will use individual tracks instead for state 'OPTIONS_MENU'
+2025-03-08 10:19:12,021 [WARNING] Required music 'main_menu_music' not found. Using 'background_humm_of_a_(1)' instead.
+2025-03-08 10:19:12,022 [DEBUG] Required track 'main_menu_music' and alternates ['main_menu', 'menu', 'title'] not found.
+2025-03-08 10:19:12,022 [DEBUG] Using fallback track 'background_humm_of_a_(1)' for 'main_menu_music'
+2025-03-08 10:19:12,022 [WARNING] Required music 'gameplay_music' not found. Using 'background_humm_of_a_(1)' instead.
+2025-03-08 10:19:12,022 [DEBUG] Required track 'gameplay_music' and alternates ['gameplay', 'game', 'world'] not found.
+2025-03-08 10:19:12,022 [DEBUG] Using fallback track 'background_humm_of_a_(1)' for 'gameplay_music'
+2025-03-08 10:19:12,022 [WARNING] Required music 'combat_music' not found. Using 'background_humm_of_a_(1)' instead.
+2025-03-08 10:19:12,022 [DEBUG] Required track 'combat_music' and alternates ['combat', 'battle', 'fight'] not found.
+2025-03-08 10:19:12,022 [DEBUG] Using fallback track 'background_humm_of_a_(1)' for 'combat_music'
+2025-03-08 10:19:12,022 [WARNING] Required music 'victory_music' not found. Using 'background_humm_of_a_(1)' instead.
+2025-03-08 10:19:12,022 [DEBUG] Required track 'victory_music' and alternates ['victory', 'win'] not found.
+2025-03-08 10:19:12,022 [DEBUG] Using fallback track 'background_humm_of_a_(1)' for 'victory_music'
+2025-03-08 10:19:12,022 [WARNING] Required music 'defeat_music' not found. Using 'background_humm_of_a_(1)' instead.
+2025-03-08 10:19:12,022 [DEBUG] Required track 'defeat_music' and alternates ['defeat', 'lose', 'game_over'] not found.
+2025-03-08 10:19:12,022 [DEBUG] Using fallback track 'background_humm_of_a_(1)' for 'defeat_music'
+2025-03-08 10:19:12,023 [INFO] Audio mappings completed.
+2025-03-08 10:19:12,023 [INFO] Changing audio state from None to GameAudioState.MAIN_MENU
+2025-03-08 10:19:12,023 [DEBUG] Stopped music playback
+2025-03-08 10:19:12,023 [DEBUG] Set current playlist to: main_menu_music
+2025-03-08 10:19:12,025 [DEBUG] Playing music: main_menu_music_2
+2025-03-08 10:19:12,025 [DEBUG] Playing main_menu_music playlist for state GameAudioState.MAIN_MENU
+2025-03-08 10:19:12,025 [INFO] Game engine initialized successfully
+2025-03-08 10:19:12,026 [INFO] Game screen reference set
+2025-03-08 10:19:13,335 [INFO] Transitioning to options menu
+2025-03-08 10:19:13,338 [DEBUG] Changing audio state to OPTIONS_MENU
+2025-03-08 10:19:13,338 [INFO] Changing audio state from GameAudioState.MAIN_MENU to GameAudioState.OPTIONS_MENU
+2025-03-08 10:19:13,339 [DEBUG] Stopped music playback
+2025-03-08 10:19:13,339 [DEBUG] Set current playlist to: main_menu_music
+2025-03-08 10:19:13,339 [WARNING] Attempted to play non-existent music track: main_menu_music_0
+2025-03-08 10:19:13,339 [DEBUG] Playing main_menu_music playlist for state GameAudioState.OPTIONS_MENU
+2025-03-08 10:19:13,339 [INFO] Transitioning to options menu
+2025-03-08 10:19:13,341 [DEBUG] Changing audio state to OPTIONS_MENU

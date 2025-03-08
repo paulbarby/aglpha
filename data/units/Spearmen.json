@@ -1,0 +1,11 @@
+{
+  "name": "Spearmen",
+  "age": "Tribal Age",
+  "classification": "Melee",
+  "stats": {
+    "health": 2,
+    "attack_power": 2,
+    "defense": 2,
+    "move_range": 2
+  }
+}

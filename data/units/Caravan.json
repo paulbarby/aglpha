@@ -1,0 +1,11 @@
+{
+  "name": "Carvan",
+  "age": "Tribal Age",
+  "classification": "Caravan",
+  "stats": {
+    "health": 2,
+    "attack_power": 1,
+    "defense": 1,
+    "move_range": 1
+  }
+}

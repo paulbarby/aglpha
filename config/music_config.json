@@ -1,0 +1,67 @@
+{
+    "playlists": {
+        "background_music": {
+            "files": [
+                "assets/music/background_music_1.mp3",
+                "assets/music/background_music_2.mp3",
+                "assets/music/background_music_3.mp3"
+            ],
+            "play_mode": "sequential",
+            "repeat": true
+        },
+        "battle_music": {
+            "files": [
+                "assets/music/battle_music_1.mp3",
+                "assets/music/battle_music_2.mp3"
+        ],
+            "play_mode": "random",
+            "repeat": false
+        },
+        "main_menu_music": {
+            "files": [
+                "assets/music/main_menu_music_1.mp3",
+                "assets/music/main_menu_music_2.mp3",
+                "assets/music/main_menu_music_3.mp3"
+            ],
+            "play_mode": "random",
+            "repeat": true
+        },
+        "gameplay_music": {
+            "files": [
+                "assets/music/gameplay_music_1.mp3",
+                "assets/music/gameplay_music_2.mp3",
+                "assets/music/gameplay_music_3.mp3",
+                "assets/music/background_music_1.mp3",
+                "assets/music/background_music_2.mp3",
+                "assets/music/background_music_3.mp3"
+            ],
+            "play_mode": "random", 
+            "repeat": true
+        },
+        "combat_music": {
+            "files": [
+                "assets/music/combat_music_1.mp3",
+                "assets/music/combat_music_2.mp3",
+                "assets/music/combat_music_3.mp3"
+            ],
+            "play_mode": "random",
+            "repeat": true
+        },
+        "victory_music": {
+            "files": [
+                "assets/music/victory_music_1.mp3",
+                "assets/music/victory_music_2.mp3"
+            ],
+            "play_mode": "random",
+            "repeat": false
+        },
+        "defeat_music": {
+            "files": [
+                "assets/music/defeat_music_1.mp3",
+                "assets/music/defeat_music_2.mp3"
+            ],
+            "play_mode": "sequential",
+            "repeat": false
+        }
+    }
+}

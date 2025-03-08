@@ -1,0 +1,11 @@
+{
+  "name": "Early Planes",
+  "age": "Combustion Engine Age",
+  "classification": "Air",
+  "stats": {
+    "health": 100,
+    "attack_power": 10,
+    "defense": 5,
+    "move_range": 3
+  }
+}

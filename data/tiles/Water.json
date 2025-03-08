@@ -1,0 +1,6 @@
+{
+  "name": "Water",
+  "movement_cost": 2,
+  "defense_bonus": 0,
+  "color": "blue"
+}

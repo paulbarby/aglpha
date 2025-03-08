@@ -1,0 +1,6 @@
+{
+  "name": "Desert",
+  "movement_cost": 1,
+  "defense_bonus": 0,
+  "color": "sandybrown"
+}

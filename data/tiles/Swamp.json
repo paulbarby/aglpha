@@ -1,0 +1,6 @@
+{
+  "name": "Swamp",
+  "movement_cost": 3,
+  "defense_bonus": 0,
+  "color": "olive"
+}

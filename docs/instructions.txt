@@ -1,0 +1,53 @@
+Explanation of Key Components
+Map Generation
+Perlin Noise: The noise library generates a 2D array of noise values, which are mapped to terrain types based on thresholds from config.ini.
+
+Rendering: Each tile is drawn as a colored rectangle using placeholder colors from terrain_colors.
+
+Units
+Units are simple objects with position and type, rendered as red circles on the map.
+
+Selection and movement are handled via mouse clicks, with a "Move" button in the UI triggering movement mode.
+
+UI
+When a unit is selected, a gray panel appears with the unit’s type and a "Move" button.
+
+Clicking "Move" allows the player to click a destination tile.
+
+Input Handling
+Mouse: Clicking a tile selects a unit if present, clicking "Move" enables movement, and clicking elsewhere deselects.
+
+Keyboard: 'S' saves the game, 'L' loads it.
+
+Persistence
+SQLite3: Two tables (map_tiles and units) store the terrain and unit data. The game state is saved to savegame.db and can be reloaded.
+
+Config
+Settings are read from config.ini, making it easy to tweak map size, noise parameters, and graphics settings.
+
+Expanding Features
+This is a minimal prototype, but the modular design allows for expansion:
+Cities: Add a City class and store city data in SQLite3.
+
+Combat: Implement unit stats (e.g., health, attack) and combat logic.
+
+Turn System: Enhance with movement points and end-turn logic.
+
+AI: Add basic AI opponents.
+
+Graphics: Replace placeholders with sprites.
+
+Fog of War: Hide unexplored tiles.
+
+Resources: Add resources to tiles, affecting gameplay.
+
+To expand, modify the Unit class for additional properties, enhance the Map class for new tile features, and update the database schema accordingly.
+Running the Game
+Save the code in a file (e.g., game.py).
+
+Create config.ini in the same directory.
+
+Run the script: python game.py.
+
+You’ll see a map with two units (red circles). Click a unit to see the UI, click "Move" to enter movement mode, then click a tile to move the unit. Press 'S' to save, 'L' to load.
+

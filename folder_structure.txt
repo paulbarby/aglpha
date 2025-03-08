@@ -1,0 +1,119 @@
+civ-game1/
+│
+├── README.md               // Project overview and setup instructions
+├── config.ini              // Main configuration file
+├── game.py                 // Main game entry point
+│
+├── docs/
+│   ├── specifications.md   // Game design document
+│   ├── technical-specs.md  // Technical specifications for the engine
+│   ├── asset-prompt.txt    // Prompt for AI image generation
+│   ├── tile-image-descriptions.md // Descriptions for tile images
+│   ├── unit-image-specs.md // Specifications for unit images
+│   └── instructions.txt    // General instructions for the game
+│
+├── data/                   // Game data files
+│   ├── tiles/              // Tile definitions
+│   │   ├── Desert.json
+│   │   ├── Forest.json
+│   │   ├── Grassland.json
+│   │   ├── Hills.json
+│   │   ├── Mountains.json
+│   │   ├── Swamp.json
+│   │   ├── Tundra.json
+│   │   └── Water.json
+│   │
+│   └── units/              // Unit definitions
+│       ├── AircraftCarriers.json
+│       ├── ArmoredTanks.json
+│       ├── Ballistae.json
+│       ├── BatteringRams.json
+│       ├── Battleships.json
+│       ├── Bombers.json
+│       ├── Cannons.json
+│       ├── Canoes.json
+│       ├── Caravan.json
+│       ├── Cavalry.json
+│       ├── Chariots.json
+│       ├── Dragoons.json
+│       ├── EarlyPlanes.json
+│       ├── Frigates.json
+│       ├── Infantry.json
+│       ├── Ironclads.json
+│       ├── JetFighters.json
+│       ├── Legionnaires.json
+│       ├── MainBattleTanks.json
+│       ├── ModernInfantry.json
+│       ├── Musketmen.json
+│       ├── NuclearSubmarines.json
+│       ├── Riflemen.json
+│       ├── Spearmen.json
+│       ├── SteamTanks.json
+│       ├── Submarines.json
+│       ├── Swordsmen.json
+│       └── Triremes.json
+│
+├── src/                    // Source code
+│   ├── engine/             // Core game engine components
+│   │   ├── __init__.py
+│   │   ├── core_states.py  // Enums for high-level states
+│   │   ├── game_engine.py  // Central GameEngine class coordinates all managers
+│   │   ├── map.py          // Map composed of tiles with procedural generation
+│   │   ├── map_serializer.py // Serialization for map data
+│   │   └── tile.py         // Basic tile representation
+│   │
+│   ├── player/             // Player management
+│   │   ├── __init__.py
+│   │   ├── player.py       // Player representation
+│   │   ├── player_manager.py // Manages all players in the game
+│   │   └── player_serializer.py // Serialization for player data
+│   │
+│   ├── ai/                 // AI engine and decision-making components
+│   │   ├── __init__.py
+│   │   ├── ai_player.py    // AI player behavior
+│   │   └── ai_manager.py   // Manages all AI players
+│   │
+│   ├── city/               // City and resource management logic 
+│   │   ├── __init__.py
+│   │   ├── city.py         // City representation
+│   │   ├── city_manager.py // Manages all cities
+│   │   └── city_serializer.py // Serialization for city data
+│   │
+│   ├── unit/               // Unit and combat related logic
+│   │   ├── __init__.py
+│   │   ├── unit.py         // Unit representation
+│   │   ├── unit_manager.py // Manages all units
+│   │   └── unit_serializer.py // Serialization for unit data
+│   │
+│   ├── event/              // Event processing 
+│   │   ├── __init__.py
+│   │   ├── event.py        // Event representation
+│   │   └── event_manager.py // Event handling and dispatching
+│   │
+│   ├── storage/            // Game data persistence
+│   │   ├── __init__.py
+│   │   ├── game_data_dto.py // Data transfer object for game state
+│   │   └── game_storage_manager.py // Manages saving/loading games
+│   │
+│   └── ui/                 // User interface components
+│       ├── __init__.py
+│       ├── animation.py    // Animation representation
+│       ├── animation_manager.py // Manages all animations
+│       ├── button.py       // Button UI component
+│       ├── load_game_screen.py // Screen for loading saved games
+│       ├── main_menu.py    // Main menu screen
+│       ├── new_game_screen.py // Screen for creating new games
+│       ├── ui_component.py // Base UI component class
+│       └── ui_manager.py   // Manages all UI components
+│
+├── assets/                 // Game assets such as images, audio, etc.
+│   ├── images/
+│   │   ├── logo.png
+│   │   └── main_menu_backdrop.jpg
+│   └── sounds/
+│
+├── tests/                  // Automated tests and test harnesses
+│   └── test_game.py
+│
+└── save/                   // Persisted SQLite save files and game data
+    └── game_saves.db       // SQLite database for saved games

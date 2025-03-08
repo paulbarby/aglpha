@@ -1,0 +1,6 @@
+{
+  "name": "Hills",
+  "movement_cost": 2,
+  "defense_bonus": 1,
+  "color": "brown"
+}

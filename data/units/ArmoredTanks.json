@@ -1,0 +1,11 @@
+{
+  "name": "Armored Tanks",
+  "age": "Combustion Engine Age",
+  "classification": "Heavy",
+  "stats": {
+    "health": 100,
+    "attack_power": 10,
+    "defense": 5,
+    "move_range": 3
+  }
+}

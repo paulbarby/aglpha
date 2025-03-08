@@ -1,0 +1,9 @@
+Here is a reusable AI image generation prompt for creating matching pixel-art style game sprites for an arcade strategy game:
+
+Prompt Template:
+"A pixel-art style game sprite of a [UNIT/OBJECT NAME] for an arcade strategy game. The sprite is designed in a retro strategy game aesthetic, with clear details and a distinct silhouette. The [UNIT/OBJECT] is depicted with historically accurate [ARMOR/WEAPONS/FEATURES] from the [ERA], with stylized shading and a limited color palette suitable for classic strategy games. The design should be functional, visually recognizable at small scales, and fit seamlessly into a cohesive game world."
+
+Example Usage:
+"A pixel-art style game sprite of a medieval knight for an arcade strategy game. The sprite is designed in a retro strategy game aesthetic, with clear details and a distinct silhouette. The knight wears chainmail armor, a great helm, and wields a longsword with a kite shield. The design is functional, visually recognizable at small scales, and fits seamlessly into a cohesive game world."
+
+"A pixel-art style game sprite of an ancient war elephant for an arcade strategy game. The sprite is designed in a retro strategy game aesthetic, with clear details and a distinct silhouette. The war elephant is armored with decorative plating, carrying a howdah with archers on top. The design is functional, visually recognizable at small scales, and fits seamlessly into a cohesive game world."
