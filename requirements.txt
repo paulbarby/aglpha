@@ -1,0 +1,18 @@
+# Core dependencies
+pygame>=2.1.0
+numpy>=1.22.0
+
+# Database
+sqlite3
+
+# Utilities
+pyyaml>=6.0.0
+configparser>=5.2.0
+
+# Development tools
+pytest>=7.0.0
+black>=22.3.0
+flake8>=4.0.1
+
+# Documentation
+sphinx>=4.4.0
